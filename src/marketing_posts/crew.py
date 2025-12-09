@@ -1,4 +1,5 @@
 from typing import List
+from datetime import datetime
 from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
 import os
@@ -43,6 +44,7 @@ class MarketingPostsCrew():
 		# requires the specific string e.g. 'gemini/gemini-1.5-pro' or 'gemini/gemini-3.0-pro-preview'
 		self.llm = JSONCleaningLLM(model=model_name)
 		self.output_name = output_name
+		self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
 	@agent
 	def lead_market_analyst(self) -> Agent:
@@ -77,14 +79,16 @@ class MarketingPostsCrew():
 	def research_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['research_task'],
-			agent=self.lead_market_analyst()
+			agent=self.lead_market_analyst(),
+			output_file=f"{self.output_name}_lead_market_analyst_research_{self.timestamp}.md"
 		)
 
 	@task
 	def project_understanding_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['project_understanding_task'],
-			agent=self.chief_marketing_strategist()
+			agent=self.chief_marketing_strategist(),
+			output_file=f"{self.output_name}_chief_strategist_project_understanding_{self.timestamp}.md"
 		)
 
 	@task
@@ -93,7 +97,7 @@ class MarketingPostsCrew():
 			config=self.tasks_config['marketing_strategy_task'],
 			agent=self.chief_marketing_strategist(),
 			output_json=MarketStrategy,
-			output_file=f"{self.output_name}_strategy.md"
+			output_file=f"{self.output_name}_chief_strategist_marketing_strategy_{self.timestamp}.md"
 		)
 
 	@task
@@ -101,7 +105,8 @@ class MarketingPostsCrew():
 		return Task(
 			config=self.tasks_config['campaign_idea_task'],
 			agent=self.creative_content_creator(),
-   		output_json=CampaignIdea
+   		output_json=CampaignIdea,
+			output_file=f"{self.output_name}_creative_creator_campaign_ideas_{self.timestamp}.md"
 		)
 
 	@task
@@ -111,7 +116,7 @@ class MarketingPostsCrew():
 			agent=self.creative_content_creator(),
    		context=[self.marketing_strategy_task(), self.campaign_idea_task()],
 			output_json=Copy,
-			output_file=f"{self.output_name}_copy.md"
+			output_file=f"{self.output_name}_creative_creator_copy_creation_{self.timestamp}.md"
 		)
 
 	@crew
