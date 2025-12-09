@@ -26,11 +26,20 @@ class CampaignIdea(BaseModel):
 	description: str = Field(..., description="Description of the campaign idea")
 	audience: str = Field(..., description="Audience of the campaign idea")
 	channel: str = Field(..., description="Channel of the campaign idea")
+	expected_impact: str = Field(..., description="Expected impact of the campaign idea")
+
+class CampaignIdeaList(BaseModel):
+	"""List of campaign ideas"""
+	ideas: List[CampaignIdea] = Field(..., description="List of campaign ideas")
 
 class Copy(BaseModel):
 	"""Copy model"""
 	title: str = Field(..., description="Title of the copy")
 	body: str = Field(..., description="Body of the copy")
+
+class CopyList(BaseModel):
+	"""List of copies"""
+	copies: List[Copy] = Field(..., description="List of marketing copies")
 
 @CrewBase
 class MarketingPostsCrew():
@@ -113,7 +122,7 @@ class MarketingPostsCrew():
 		return Task(
 			config=self.tasks_config['campaign_idea_task'],
 			agent=self.creative_content_creator(),
-   		output_json=CampaignIdea,
+			output_json=CampaignIdeaList,
 			output_file=os.path.join(self.folder_path, "creative_creator_campaign_ideas.md")
 		)
 
@@ -123,7 +132,7 @@ class MarketingPostsCrew():
 			config=self.tasks_config['copy_creation_task'],
 			agent=self.creative_content_creator(),
    		context=[self.marketing_strategy_task(), self.campaign_idea_task()],
-			output_json=Copy,
+			output_json=CopyList,
 			output_file=os.path.join(self.folder_path, "creative_creator_copy_creation.md")
 		)
 
