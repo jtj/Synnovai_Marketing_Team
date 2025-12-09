@@ -44,6 +44,11 @@ Available Models (Partial List):
         except yaml.YAMLError as exc:
             print(f"Error parsing YAML file: {exc}")
             sys.exit(1)
+            
+        # Optional Gem URL input
+        if 'gem_url' not in inputs:
+            inputs['gem_url'] = "No additional URL provided."
+            
     else:
         # Default inputs
         print("No YAML file provided, using default inputs.")
@@ -54,7 +59,8 @@ CrewAI, a leading provider of multi-agent systems, aims to revolutionize marketi
 
 Customer Domain: AI and Automation Solutions
 Project Overview: Creating a comprehensive marketing campaign to boost awareness and adoption of CrewAI's services among enterprise clients.
-"""
+""",
+            'gem_url': "No additional URL provided."
         }
     
     print(f"Using model: {args.model}")

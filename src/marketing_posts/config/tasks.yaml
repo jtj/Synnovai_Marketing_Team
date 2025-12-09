@@ -5,6 +5,9 @@ research_task:
     Make sure you find any interesting and relevant information given the
     current year is 2025.
     We are working with them on the following project: {project_description}.
+    
+    Check for additional context or Gem info at this URL: {gem_url}. 
+    If a valid URL is provided, use the ScrapeWebsiteTool to read it to gather more context.
   expected_output: >
     A complete report on the customer and their customers and competitors,
     including their demographics, preferences, market positioning and audience engagement.
@@ -14,6 +17,7 @@ project_understanding_task:
     Understand the project details and the target audience for
     {project_description}.
     Review any provided materials and gather additional information as needed.
+    Review additional context from: {gem_url}.
   expected_output: >
     A detailed summary of the project and a profile of the target audience.
 
