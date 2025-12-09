@@ -26,6 +26,7 @@ marketing_strategy_task:
   expected_output: >
     A detailed marketing strategy document that outlines the goals, target
     audience, key messages, and proposed tactics, make sure to have name, tatics, channels and KPIs
+  output_file: 'marketing_strategy.md'
 
 campaign_idea_task:
   description: >
@@ -40,3 +41,4 @@ copy_creation_task:
     Ensure the copies are compelling, clear, and tailored to the target audience.
   expected_output: >
     Marketing copies for each campaign idea.
+  output_file: 'marketing_copy.md'
