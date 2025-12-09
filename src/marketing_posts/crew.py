@@ -38,10 +38,11 @@ class MarketingPostsCrew():
 
 	# Initialize the Gemini LLM
 	# Note: Ensure GEMINI_API_KEY is set in your .env file
-	def __init__(self, model_name="gemini/gemini-pro-latest"):
+	def __init__(self, model_name="gemini/gemini-pro-latest", output_name="marketing"):
 		# Using 'gemini/gemini-pro' as requested. usage of specific 3.0 preview models 
 		# requires the specific string e.g. 'gemini/gemini-1.5-pro' or 'gemini/gemini-3.0-pro-preview'
 		self.llm = JSONCleaningLLM(model=model_name)
+		self.output_name = output_name
 
 	@agent
 	def lead_market_analyst(self) -> Agent:
@@ -91,7 +92,8 @@ class MarketingPostsCrew():
 		return Task(
 			config=self.tasks_config['marketing_strategy_task'],
 			agent=self.chief_marketing_strategist(),
-			output_json=MarketStrategy
+			output_json=MarketStrategy,
+			output_file=f"{self.output_name}_strategy.md"
 		)
 
 	@task
@@ -108,7 +110,8 @@ class MarketingPostsCrew():
 			config=self.tasks_config['copy_creation_task'],
 			agent=self.creative_content_creator(),
    		context=[self.marketing_strategy_task(), self.campaign_idea_task()],
-			output_json=Copy
+			output_json=Copy,
+			output_file=f"{self.output_name}_copy.md"
 		)
 
 	@crew

@@ -1,6 +1,7 @@
 import sys
 import yaml
 import argparse
+from pathlib import Path
 from marketing_posts.crew import MarketingPostsCrew
 
 def run():
@@ -36,8 +37,11 @@ Project Overview: Creating a comprehensive marketing campaign to boost awareness
         }
     
     print(f"Using model: {args.model}")
+    
+    output_name = Path(args.file).stem if args.file else 'marketing'
+    
     try:
-        MarketingPostsCrew(model_name=args.model).crew().kickoff(inputs=inputs)
+        MarketingPostsCrew(model_name=args.model, output_name=output_name).crew().kickoff(inputs=inputs)
     except Exception as e:
         # Check if it looks like a JSON validation error
         if "Invalid JSON" in str(e) or "pydantic" in str(e).lower():
