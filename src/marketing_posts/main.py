@@ -5,9 +5,30 @@ from pathlib import Path
 from marketing_posts.crew import MarketingPostsCrew
 
 def run():
-    parser = argparse.ArgumentParser(description="Run the Synnovai Marketing Generator.")
+    model_list = """
+Available Models (Partial List):
+  - gemini/gemini-pro-latest (Default)
+  - gemini/gemini-flash-latest
+  - gemini/gemini-2.0-flash
+  - gemini/gemini-2.0-flash-exp
+  - gemini/gemini-2.0-flash-lite-preview-02-05
+  - gemini/gemini-2.0-pro-exp-02-05
+  - gemini/gemini-2.5-flash
+  - gemini/gemini-3-pro-preview
+  - gemini/gemini-exp-1206
+  - gemini/gemini-1.5-pro-latest
+  - gemini/gemini-1.5-flash-latest
+
+(Note: You can use any model available to your API key, prefixed with 'gemini/')
+"""
+    parser = argparse.ArgumentParser(
+        description="Run the Synnovai Marketing Generator.",
+        epilog=model_list,
+        formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     parser.add_argument('file', nargs='?', help='Path to the company info YAML file')
-    parser.add_argument('-m', '--model', default='gemini/gemini-pro-latest', help='Gemini model to use (e.g., gemini/gemini-1.5-pro, gemini/gemini-3-pro-preview)')
+    parser.add_argument('-m', '--model', default='gemini/gemini-pro-latest', help='Gemini model to use. See below for options.')
+
     
     args = parser.parse_args()
 
