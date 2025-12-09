@@ -61,8 +61,10 @@ Project Overview: Creating a comprehensive marketing campaign to boost awareness
     
     output_name = Path(args.file).stem if args.file else 'marketing'
     
+    crew_instance = None
     try:
-        MarketingPostsCrew(model_name=args.model, output_name=output_name).crew().kickoff(inputs=inputs)
+        crew_instance = MarketingPostsCrew(model_name=args.model, output_name=output_name)
+        crew_instance.crew().kickoff(inputs=inputs)
     except Exception as e:
         # Check if it looks like a JSON validation error
         if "Invalid JSON" in str(e) or "pydantic" in str(e).lower():
@@ -75,7 +77,16 @@ Project Overview: Creating a comprehensive marketing campaign to boost awareness
             print("\n" * 2)
             print(f"Detailed Error: {e}")
         else:
-            raise e
+            print(f"An error occurred: {e}")
+            # We don't raise here if we want the finally block to run and then perhaps exit gracefully,
+            # but raising is fine too; finally will still run.
+            # Let's re-raise to be safe and show full traceback if needed, 
+            # but usually for a user app printing the error is cleaner.
+            # For now, let's just print.
+    finally:
+        if crew_instance:
+            print("\nGenerating Master Report...")
+            crew_instance.generate_master_report()
 
 
 def train():

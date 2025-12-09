@@ -3,6 +3,7 @@ from datetime import datetime
 from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
 import os
+import glob
 from marketing_posts.llm_wrapper import JSONCleaningLLM
 
 # Uncomment the following line to use an example of a custom tool
@@ -133,3 +134,37 @@ class MarketingPostsCrew():
 			verbose=True,
 			# process=Process.hierarchical, # In case you wanna use that instead https://docs.crewai.com/how-to/Hierarchical/
 		)
+
+	def generate_master_report(self):
+		"""Concatenates all agent reports into a master report"""
+		master_report_path = os.path.join(self.folder_path, "master-report.md")
+		
+		# Find all markdown files in the folder
+		md_files = glob.glob(os.path.join(self.folder_path, "*.md"))
+		
+		# Filter out the master report itself if it already exists
+		md_files = [f for f in md_files if os.path.basename(f) != "master-report.md"]
+		
+		# Sort files to ensure deterministic order (e.g., by name)
+		# Since our filenames are descriptive, sorting by name is reasonable,
+		# or we could rely on task order if we tracked it, but name sort is safer for now.
+		md_files.sort()
+		
+		with open(master_report_path, "w") as outfile:
+			outfile.write(f"# Master Marketing Report: {self.output_name}\n")
+			outfile.write(f"Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+			
+			for filepath in md_files:
+				filename = os.path.basename(filepath)
+				agent_task_name = filename.replace(".md", "").replace("_", " ").title()
+				
+				outfile.write(f"\n---\n## Report: {agent_task_name}\n---\n\n")
+				
+				try:
+					with open(filepath, "r") as infile:
+						outfile.write(infile.read())
+						outfile.write("\n\n")
+				except Exception as e:
+					outfile.write(f"Error reading {filename}: {str(e)}\n")
+					
+		print(f"\n[Master Report] Generated at: {master_report_path}")
