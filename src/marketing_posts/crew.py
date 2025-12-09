@@ -39,7 +39,7 @@ class MarketingPostsCrew():
 	# Note: Ensure GEMINI_API_KEY is set in your .env file
 	# Using 'gemini/gemini-pro' as requested. usage of specific 3.0 preview models 
 	# requires the specific string e.g. 'gemini/gemini-1.5-pro' or 'gemini/gemini-3.0-pro-preview'
-	llm = LLM(model="gemini/gemini-1.5-pro")
+	llm = LLM(model="gemini/gemini-pro-latest")
 
 	@agent
 	def lead_market_analyst(self) -> Agent:
