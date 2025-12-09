@@ -11,7 +11,7 @@ This project leverages the **CrewAI** framework and **Google Gemini** models to 
     - **Individual Reports**: Each agent's work is saved to a distinct markdown file within that folder.
     - **Master Report**: A single `master-report.md` concatenates all outputs into one final document.
     - **Clean Repo**: generated reports are automatically git-ignored.
-- **Smart Error Handling**: Includes a custom JSON linter that automatically repairs malformed LLM outputs and provides clear error messages if validation fails.
+- **Fault-Tolerant JSON Parsing**: Implements a custom LLM wrapper powered by `json_repair` that automatically detects and fixes malformed JSON outputs (e.g., trailing characters, missing quotes) to prevent validation crashes.
 - **CLI Support**: Full command-line interface for file selection and model switching.
 
 ## Prerequisites

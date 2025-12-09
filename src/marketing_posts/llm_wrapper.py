@@ -1,47 +1,53 @@
-import re
 import json
+import sys
 from crewai import LLM
-from typing import Any
+import litellm
+from json_repair import repair_json
+from typing import Any, List, Dict, Union
 
 class JSONCleaningLLM(LLM):
-    def call(self, *args, **kwargs) -> str:
-        try:
-            # Call the original LLM
-            response = super().call(*args, **kwargs)
-            
-            # Simple heuristic: if we expect JSON (based on context or just always try to clean)
-            # We look for the first JSON block { ... } in the response.
-            # This is a basic implementation.
-            
-            # Regex to find the first balanced JSON object (imperfect but better than nothing)
-            # A more robust way involves json-repair lib, but let's stick to simple regex for now 
-            # or relying on the fact that Gemini usually wraps in ```json ... ```
-            
-            # Strip markdown code blocks if present
-            clean_response = response
-            if "```" in response:
-                 # Extract content between ```json and ``` or just ``` and ```
-                match = re.search(r"```(?:json)?(.*?)```", response, re.DOTALL)
-                if match:
-                    clean_response = match.group(1).strip()
-            
-            # Further try to find the first '{' and last '}'
-            start = clean_response.find('{')
-            end = clean_response.rfind('}')
-            
-            if start != -1 and end != -1:
-                json_str = clean_response[start:end+1]
-                # Validate if it is loadable
-                try:
-                    json.loads(json_str)
-                    return json_str
-                except json.JSONDecodeError:
-                    pass # Fallback to original if valid JSON not found in the substring
+    """
+    A wrapper around CrewAI LLM that forces usage of custom call method 
+    to robustly clean JSON output using json_repair.
+    """
+    real_model_name: str = "gemini/gemini-pro-latest"
+    
+    def __init__(self, model="gemini/gemini-pro-latest"):
+        # We pass a known valid model name (but not Gemini) to avoid CrewAI auto-replacement logic.
+        # We override call() anyway so this model name is just a placeholder.
+        super().__init__(model="gpt-4")
+        self.real_model_name = model
+        print(f"DEBUG: JSONCleaningLLM Initialized (Real Model: {self.real_model_name})")
 
-            return clean_response
+    def call(self, messages: Union[str, List[Dict[str, str]]], callbacks: List[Any] = None) -> str:
+        # sys.stderr.write(f"DEBUG: JSONCleaningLLM.call executing for {self.real_model_name}\n")
+        # sys.stderr.flush()
+        
+        try:
+            # LiteLLM expects messages list. If string, wrap it.
+            if isinstance(messages, str):
+                messages = [{"role": "user", "content": messages}]
+            
+            response = litellm.completion(
+                model=self.real_model_name,
+                messages=messages,
+            )
+            
+            content = response.choices[0].message.content
+            
+            # Use json_repair
+            try:
+                # print(f"[DEBUG] Raw content length: {len(content)}")
+                cleaned_json_str = repair_json(content, return_objects=False)
+                if cleaned_json_str:
+                    # sys.stderr.write(f"[DEBUG] JSON Repair success for content length {len(content)}\n")
+                    # sys.stderr.flush()
+                    return cleaned_json_str
+            except Exception as e:
+                print(f"[JSONCleaningLLM] Repair failed: {e}")
+                
+            return content
 
         except Exception as e:
-            # If the actual LLM call fails completely
-            # Or if some other issue happens
             print(f"LLM Call Error: {e}")
             raise e

@@ -58,7 +58,8 @@ class MarketingPostsCrew():
 			tools=[SerperDevTool(), ScrapeWebsiteTool()],
 			verbose=True,
 			memory=False,
-			llm=self.llm
+			llm=self.llm,
+			function_calling_llm=self.llm
 		)
 
 	@agent
@@ -68,7 +69,8 @@ class MarketingPostsCrew():
 			tools=[SerperDevTool(), ScrapeWebsiteTool()],
 			verbose=True,
 			memory=False,
-			llm=self.llm
+			llm=self.llm,
+			function_calling_llm=self.llm
 		)
 
 	@agent
@@ -77,7 +79,8 @@ class MarketingPostsCrew():
 			config=self.agents_config['creative_content_creator'],
 			verbose=True,
 			memory=False,
-			llm=self.llm
+			llm=self.llm,
+			function_calling_llm=self.llm
 		)
 
 	@task
