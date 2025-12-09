@@ -9,6 +9,7 @@ This project leverages the **CrewAI** framework and **Google Gemini** models to 
 - **Robust Output Management**:
     - **Timestamped Folders**: Every run creates a unique folder under `Reports/` (e.g., `Reports/20241209_153000_tjsammtg/`).
     - **Individual Reports**: Each agent's work is saved to a distinct markdown file within that folder.
+    - **Master Report**: A single `master-report.md` concatenates all outputs into one final document.
     - **Clean Repo**: generated reports are automatically git-ignored.
 - **Smart Error Handling**: Includes a custom JSON linter that automatically repairs malformed LLM outputs and provides clear error messages if validation fails.
 - **CLI Support**: Full command-line interface for file selection and model switching.
@@ -71,6 +72,7 @@ name: "Synnovai"
 website: "https://synnovai.com"
 customer_domain: "synnovai.com"
 description: "Synnovai is an AI-powered marketing agency..."
+# gem_url: "https://gemini.google.com/share/..." (Optional: URL for agent context)
 ```
 
 ## Output Structure
@@ -84,7 +86,8 @@ Reports/
     ├── chief_strategist_project_understanding.md
     ├── chief_strategist_marketing_strategy.md
     ├── creative_creator_campaign_ideas.md
-    └── creative_creator_copy_creation.md
+    ├── creative_creator_copy_creation.md
+    └── master-report.md
 ```
 
 ## License
