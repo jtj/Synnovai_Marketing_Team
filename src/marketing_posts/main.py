@@ -29,7 +29,21 @@ Project Overview: Creating a comprehensive marketing campaign to boost awareness
 """
         }
     
-    MarketingPostsCrew().crew().kickoff(inputs=inputs)
+    try:
+        MarketingPostsCrew().crew().kickoff(inputs=inputs)
+    except Exception as e:
+        # Check if it looks like a JSON validation error
+        if "Invalid JSON" in str(e) or "pydantic" in str(e).lower():
+            print("\n" * 2)
+            print("JJJJJ   SSSS   OOO   N   N      FFFFF   AAA   IIIII  L")
+            print("  J    S      O   O  NN  N      F      A   A    I    L")
+            print("  J     SSS   O   O  N N N      FFF    AAAAA    I    L")
+            print("J J        S  O   O  N  NN      F      A   A    I    L")
+            print(" J     SSSS    OOO   N   N      F      A   A  IIIII  LLLLL")
+            print("\n" * 2)
+            print(f"Detailed Error: {e}")
+        else:
+            raise e
 
 
 def train():

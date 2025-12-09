@@ -2,6 +2,7 @@ from typing import List
 from crewai import Agent, Crew, Process, Task, LLM
 from crewai.project import CrewBase, agent, crew, task
 import os
+from marketing_posts.llm_wrapper import JSONCleaningLLM
 
 # Uncomment the following line to use an example of a custom tool
 # from marketing_posts.tools.custom_tool import MyCustomTool
