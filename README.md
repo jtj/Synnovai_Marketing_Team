@@ -1,39 +1,91 @@
+# Synnovai Marketing Generator
 
-# AI Crew for Marketing Strategy
-## Introduction
-This project demonstrates the use of the CrewAI framework to automate the creation of a marketing strategy. CrewAI orchestrates autonomous AI agents, enabling them to collaborate and execute complex tasks efficiently.
+This project leverages the **CrewAI** framework and **Google Gemini** models to automate the creation of comprehensive marketing strategies. It orchestrates a team of autonomous AI agents—a Lead Market Analyst, a Chief Marketing Strategist, and a Creative Content Creator—to research, plan, and generate marketing content.
 
-By [@joaomdmoura](https://x.com/joaomdmoura)
+## Features
 
-- [CrewAI Framework](#crewai-framework)
-- [Running the script](#running-the-script)
-- [Details & Explanation](#details--explanation)
-- [Contributing](#contributing)
-- [Support and Contact](#support-and-contact)
-- [License](#license)
+- **Google Gemini Integration**: Uses `gemini-pro-latest` by default, with support for all Gemini models (Flash, Pro, Exp, etc.).
+- **Dynamic Inputs**: Accepts company information via easy-to-edit YAML files.
+- **Robust Output Management**:
+    - **Timestamped Folders**: Every run creates a unique folder under `Reports/` (e.g., `Reports/20241209_153000_tjsammtg/`).
+    - **Individual Reports**: Each agent's work is saved to a distinct markdown file within that folder.
+    - **Clean Repo**: generated reports are automatically git-ignored.
+- **Smart Error Handling**: Includes a custom JSON linter that automatically repairs malformed LLM outputs and provides clear error messages if validation fails.
+- **CLI Support**: Full command-line interface for file selection and model switching.
 
-## CrewAI Framework
-CrewAI is designed to facilitate the collaboration of role-playing AI agents. In this example, these agents work together to create a comprehensive marketing strategy and develop compelling marketing content.
+## Prerequisites
 
-## Running the Script
-It uses GPT-4o by default so you should have access to that to run it.
+- Python 3.10 - 3.13
+- [Google Gemini API Key](https://aistudio.google.com/)
+- [Serper API Key](https://serper.dev/) (for Google Search capabilities)
 
-***Disclaimer:** This will use gpt-4o unless you change it to use a different model, and by doing so it may incur in different costs.*
+## Installation
 
-- **Configure Environment**: Copy `.env.example` and set up the environment variables for [OpenAI](https://platform.openai.com/api-keys) and other tools as needed, like [Serper](serper.dev).
-- **Install Dependencies**: Run `poetry lock && poetry install`.
-- **Customize**: Modify `src/marketing_posts/main.py` to add custom inputs for your agents and tasks.
-- **Customize Further**: Check `src/marketing_posts/config/agents.yaml` to update your agents and `src/marketing_posts/config/tasks.yaml` to update your tasks.
-- **Execute the Script**: Run `poetry run marketing_posts` and input your project details.
+1.  **Clone the repository:**
+    ```bash
+    git clone <repository-url>
+    cd synnovai_marketing_generator
+    ```
 
-## Details & Explanation
-- **Running the Script**: Execute `poetry run marketing_posts`. The script will leverage the CrewAI framework to generate a detailed marketing strategy.
-- **Key Components**:
-  - `src/marketing_posts/main.py`: Main script file.
-  - `src/marketing_posts/crew.py`: Main crew file where agents and tasks come together, and the main logic is executed.
-  - `src/marketing_posts/config/agents.yaml`: Configuration file for defining agents.
-  - `src/marketing_posts/config/tasks.yaml`: Configuration file for defining tasks.
-  - `src/marketing_posts/tools`: Contains tool classes used by the agents.
+2.  **Set up the environment:**
+    Create a `.env` file in the root directory:
+    ```env
+    GEMINI_API_KEY=your_gemini_api_key_here
+    SERPER_API_KEY=your_serper_api_key_here
+    ```
+
+3.  **Install dependencies:**
+    It is recommended to use a virtual environment.
+    ```bash
+    python -m venv .venv
+    source .venv/bin/activate
+    pip install -e .
+    ```
+
+## Usage
+
+### Basic Run
+Run the generator with a company information YAML file:
+```bash
+marketing_posts company_info.yaml
+```
+
+### View Available Models
+List all compatible Gemini models available to your API key:
+```bash
+marketing_posts -h
+```
+
+### Select a Specific Model
+Use the `--model` flag to experiment with different Gemini versions (e.g., faster Flash models or experimental builds):
+```bash
+marketing_posts company_info.yaml --model gemini/gemini-2.0-flash
+```
+
+## Input Format (YAML)
+
+Create a YAML file (e.g., `my_company.yaml`) with the following structure:
+
+```yaml
+name: "Synnovai"
+website: "https://synnovai.com"
+customer_domain: "synnovai.com"
+description: "Synnovai is an AI-powered marketing agency..."
+```
+
+## Output Structure
+
+After a successful run, you will find a new folder in `Reports/`:
+
+```text
+Reports/
+└── 20241209_141000_synnovai/
+    ├── lead_market_analyst_research.md
+    ├── chief_strategist_project_understanding.md
+    ├── chief_strategist_marketing_strategy.md
+    ├── creative_creator_campaign_ideas.md
+    └── creative_creator_copy_creation.md
+```
 
 ## License
-This project is released under the MIT License.
+MIT License
