@@ -1,17 +1,23 @@
-#!/usr/bin/env python
 import sys
 import yaml
+import argparse
 from marketing_posts.crew import MarketingPostsCrew
 
 def run():
+    parser = argparse.ArgumentParser(description="Run the Synnovai Marketing Generator.")
+    parser.add_argument('file', nargs='?', help='Path to the company info YAML file')
+    parser.add_argument('-m', '--model', default='gemini/gemini-pro-latest', help='Gemini model to use (e.g., gemini/gemini-1.5-pro, gemini/gemini-3-pro-preview)')
+    
+    args = parser.parse_args()
+
     # Check if a YAML file path is provided
-    if len(sys.argv) > 1 and sys.argv[1].endswith('.yaml'):
+    if args.file:
         try:
-            with open(sys.argv[1], 'r') as f:
+            with open(args.file, 'r') as f:
                 inputs = yaml.safe_load(f)
-            print(f"Loaded inputs from {sys.argv[1]}")
+            print(f"Loaded inputs from {args.file}")
         except FileNotFoundError:
-            print(f"Error: File {sys.argv[1]} not found.")
+            print(f"Error: File {args.file} not found.")
             sys.exit(1)
         except yaml.YAMLError as exc:
             print(f"Error parsing YAML file: {exc}")
@@ -29,15 +35,16 @@ Project Overview: Creating a comprehensive marketing campaign to boost awareness
 """
         }
     
+    print(f"Using model: {args.model}")
     try:
-        MarketingPostsCrew().crew().kickoff(inputs=inputs)
+        MarketingPostsCrew(model_name=args.model).crew().kickoff(inputs=inputs)
     except Exception as e:
         # Check if it looks like a JSON validation error
         if "Invalid JSON" in str(e) or "pydantic" in str(e).lower():
             print("\n" * 2)
             print("JJJJJ   SSSS   OOO   N   N      FFFFF   AAA   IIIII  L")
             print("  J    S      O   O  NN  N      F      A   A    I    L")
-            print("  J     SSS   O   O  N N N      FFF    AAAAA    I    L")
+            print("  J     SSSS  O   O  N N N      FFF    AAAAA    I    L")
             print("J J        S  O   O  N  NN      F      A   A    I    L")
             print(" J     SSSS    OOO   N   N      F      A   A  IIIII  LLLLL")
             print("\n" * 2)
@@ -61,6 +68,7 @@ Project Overview: Creating a comprehensive marketing campaign to boost awareness
 """
     }
     try:
+        # Pass default model for training or add CLI args here too if needed
         MarketingPostsCrew().crew().train(n_iterations=int(sys.argv[1]), inputs=inputs)
 
     except Exception as e:
