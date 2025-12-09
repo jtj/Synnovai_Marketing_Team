@@ -39,12 +39,16 @@ class MarketingPostsCrew():
 
 	# Initialize the Gemini LLM
 	# Note: Ensure GEMINI_API_KEY is set in your .env file
+	# Initialize the Gemini LLM
+	# Note: Ensure GEMINI_API_KEY is set in your .env file
 	def __init__(self, model_name="gemini/gemini-pro-latest", output_name="marketing"):
 		# Using 'gemini/gemini-pro' as requested. usage of specific 3.0 preview models 
 		# requires the specific string e.g. 'gemini/gemini-1.5-pro' or 'gemini/gemini-3.0-pro-preview'
 		self.llm = JSONCleaningLLM(model=model_name)
 		self.output_name = output_name
 		self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+		self.folder_path = f"Reports/{self.timestamp}_{self.output_name}"
+		os.makedirs(self.folder_path, exist_ok=True)
 
 	@agent
 	def lead_market_analyst(self) -> Agent:
@@ -80,7 +84,7 @@ class MarketingPostsCrew():
 		return Task(
 			config=self.tasks_config['research_task'],
 			agent=self.lead_market_analyst(),
-			output_file=f"{self.output_name}_lead_market_analyst_research_{self.timestamp}.md"
+			output_file=os.path.join(self.folder_path, "lead_market_analyst_research.md")
 		)
 
 	@task
@@ -88,7 +92,7 @@ class MarketingPostsCrew():
 		return Task(
 			config=self.tasks_config['project_understanding_task'],
 			agent=self.chief_marketing_strategist(),
-			output_file=f"{self.output_name}_chief_strategist_project_understanding_{self.timestamp}.md"
+			output_file=os.path.join(self.folder_path, "chief_strategist_project_understanding.md")
 		)
 
 	@task
@@ -97,7 +101,7 @@ class MarketingPostsCrew():
 			config=self.tasks_config['marketing_strategy_task'],
 			agent=self.chief_marketing_strategist(),
 			output_json=MarketStrategy,
-			output_file=f"{self.output_name}_chief_strategist_marketing_strategy_{self.timestamp}.md"
+			output_file=os.path.join(self.folder_path, "chief_strategist_marketing_strategy.md")
 		)
 
 	@task
@@ -106,7 +110,7 @@ class MarketingPostsCrew():
 			config=self.tasks_config['campaign_idea_task'],
 			agent=self.creative_content_creator(),
    		output_json=CampaignIdea,
-			output_file=f"{self.output_name}_creative_creator_campaign_ideas_{self.timestamp}.md"
+			output_file=os.path.join(self.folder_path, "creative_creator_campaign_ideas.md")
 		)
 
 	@task
@@ -116,7 +120,7 @@ class MarketingPostsCrew():
 			agent=self.creative_content_creator(),
    		context=[self.marketing_strategy_task(), self.campaign_idea_task()],
 			output_json=Copy,
-			output_file=f"{self.output_name}_creative_creator_copy_creation_{self.timestamp}.md"
+			output_file=os.path.join(self.folder_path, "creative_creator_copy_creation.md")
 		)
 
 	@crew
