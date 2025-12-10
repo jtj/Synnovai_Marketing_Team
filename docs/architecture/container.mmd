@@ -1,0 +1,34 @@
+graph TB
+    user[User]
+    
+    subgraph "Synnovai Marketing Generator Application"
+        cli[CLI Application<br/>(main.py)]
+        kb_loader[Knowledge Base Loader<br/>(knowledge_loader.py)]
+        crew_service[CrewAI Orchestrator<br/>(crew.py)]
+        llm[LLM Wrapper<br/>(llm_wrapper.py)]
+        
+        cli --> crew_service
+        crew_service --> kb_loader
+        crew_service --> llm
+    end
+
+    subgraph "File System"
+        config_files[Config Files<br/>(YAML)]
+        company_docs[Company Documents<br/>(PDF/TXT/MD)]
+        reports[Reports Directory]
+    end
+
+    ext_gemini[Google Gemini API]
+    ext_serper[Serper Dev API]
+
+    user -->|Runs command| cli
+    user -->|Edits| config_files
+    user -->|Adds files| company_docs
+    
+    cli -->|Reads| config_files
+    kb_loader -->|Reads| company_docs
+    
+    llm -->|API Calls| ext_gemini
+    crew_service -->|Search Queries| ext_serper
+    
+    crew_service -->|Writes| reports

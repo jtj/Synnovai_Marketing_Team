@@ -1,0 +1,12 @@
+graph TB
+    user[User]
+    sys[Synnovai Marketing Generator]
+    gemini[Google Gemini API]
+    serper[Serper Dev API]
+
+    user -->|Provides Company Info & Docs| sys
+    sys -->|Queries for content generation| gemini
+    sys -->|Queries for market research| serper
+    gemini -->|Returns content| sys
+    serper -->|Returns search results| sys
+    sys -->|Generates Markdown Reports| user

@@ -1,0 +1,31 @@
+graph TB
+    subgraph "CrewAI Orchestrator (crew.py)"
+        manager[Chief Creative Director<br/>(Manager Agent)]
+        
+        subgraph "Workers"
+            analyst[Lead Market Analyst]
+            strategist[Chief Marketing Strategist]
+            creator[Creative Content Creator]
+            writer[Advertorial Writer]
+        end
+        
+        manager -->|Delegates/Reviews| analyst
+        manager -->|Delegates/Reviews| strategist
+        manager -->|Delegates/Reviews| creator
+        manager -->|Delegates/Reviews| writer
+        
+        analyst -->|Market Data| strategist
+        strategist -->|Strategy| creator
+        strategist -->|Strategy| writer
+    end
+
+    subgraph "External Tools"
+        search[SerperDevTool]
+        scrape[ScrapeWebsiteTool]
+        youtube[YouTubeChannelSearchTool]
+    end
+
+    analyst -->|Uses| search
+    analyst -->|Uses| scrape
+    analyst -->|Uses| youtube
+    strategist -->|Uses| search
