@@ -6,8 +6,11 @@ research_task:
     current year is 2025.
     We are working with them on the following project: {project_description}.
     
-    Check for additional context or Gem info at this URL: {gem_url}. 
-    If a valid URL is provided, use the ScrapeWebsiteTool to read it to gather more context.
+    Check for additional context in the following content:
+    {company_knowledge}
+    
+    Also check this URL if provided (but do not attempt to scrape gemini.google.com links directly): {gem_url}. 
+    If a valid external URL is provided, use the ScrapeWebsiteTool to read it to gather more context.
   expected_output: >
     A complete report on the customer and their customers and competitors,
     including their demographics, preferences, market positioning and audience engagement.
@@ -17,7 +20,8 @@ project_understanding_task:
     Understand the project details and the target audience for
     {project_description}.
     Review any provided materials and gather additional information as needed.
-    Review additional context from: {gem_url}.
+    Review any provided materials and gather additional information as needed.
+    Review additional context from: {company_knowledge}.
   expected_output: >
     A detailed summary of the project and a profile of the target audience.
 

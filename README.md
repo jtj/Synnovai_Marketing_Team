@@ -63,6 +63,16 @@ Use the `--model` flag to experiment with different Gemini versions (e.g., faste
 marketing_posts company_info.yaml --model gemini/gemini-2.0-flash
 ```
 
+## Knowledge Base Integration
+
+Enrich the agents' context with your own data by using the **Company Folder** feature:
+
+**Company Folder (Documents)**:
+Create a folder named exactly after your company (matching the `name` field in your YAML file, e.g., `TJ Sam Mortgage`).
+Drop any supported documents into this folder.
+*   **Supported Formats**: `.pdf`, `.txt`, `.md`, `.yaml`
+*   **Function**: The application will automatically scan this folder, extract text from all files, and feed it to the agents as primary context.
+
 ## Input Format (YAML)
 
 Create a YAML file (e.g., `my_company.yaml`) with the following structure:

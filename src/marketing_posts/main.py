@@ -3,6 +3,7 @@ import yaml
 import argparse
 from pathlib import Path
 from marketing_posts.crew import MarketingPostsCrew
+from marketing_posts.knowledge_loader import KnowledgeLoader
 
 def run():
     model_list = """
@@ -46,8 +47,27 @@ Available Models (Partial List):
             sys.exit(1)
             
         # Optional Gem URL input
+        # Optional Gem URL input (Legacy support, but we don't use it for scraping anymore if prohibited)
         if 'gem_url' not in inputs:
             inputs['gem_url'] = "No additional URL provided."
+        
+        # Load Company Knowledge from Folder
+        company_knowledge_content = ""
+        
+        # Determine company name from inputs
+        company_name = inputs.get('name')
+        if company_name:
+            folder_knowledge = KnowledgeLoader.load_knowledge(company_name)
+            if folder_knowledge:
+                company_knowledge_content += folder_knowledge
+                print(f"Loaded company knowledge from folder '{company_name}'")
+        else:
+             print("Warning: 'name' field not found in YAML. Cannot load company folder.")
+
+        if company_knowledge_content:
+            inputs['company_knowledge'] = company_knowledge_content
+        else:
+            inputs['company_knowledge'] = "No local company knowledge found."
             
     else:
         # Default inputs
@@ -60,7 +80,8 @@ CrewAI, a leading provider of multi-agent systems, aims to revolutionize marketi
 Customer Domain: AI and Automation Solutions
 Project Overview: Creating a comprehensive marketing campaign to boost awareness and adoption of CrewAI's services among enterprise clients.
 """,
-            'gem_url': "No additional URL provided."
+            'gem_url': "No additional URL provided.",
+            'company_knowledge': "No local company knowledge found."
         }
     
     print(f"Using model: {args.model}")
