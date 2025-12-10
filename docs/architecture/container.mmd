@@ -2,10 +2,10 @@ graph TB
     user[User]
     
     subgraph "Synnovai Marketing Generator Application"
-        cli[CLI Application<br/>(main.py)]
-        kb_loader[Knowledge Base Loader<br/>(knowledge_loader.py)]
-        crew_service[CrewAI Orchestrator<br/>(crew.py)]
-        llm[LLM Wrapper<br/>(llm_wrapper.py)]
+        cli["CLI Application<br/>(main.py)"]
+        kb_loader["Knowledge Base Loader<br/>(knowledge_loader.py)"]
+        crew_service["CrewAI Orchestrator<br/>(crew.py)"]
+        llm["LLM Wrapper<br/>(llm_wrapper.py)"]
         
         cli --> crew_service
         crew_service --> kb_loader
@@ -13,8 +13,8 @@ graph TB
     end
 
     subgraph "File System"
-        config_files[Config Files<br/>(YAML)]
-        company_docs[Company Documents<br/>(PDF/TXT/MD)]
+        config_files["Config Files<br/>(YAML)"]
+        company_docs["Company Documents<br/>(PDF/TXT/MD)"]
         reports[Reports Directory]
     end
 
