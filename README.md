@@ -1,6 +1,6 @@
 # Synnovai Marketing Generator
 
-This project leverages the **CrewAI** framework and **Google Gemini** models to automate the creation of comprehensive marketing strategies. It orchestrates a team of autonomous AI agents—a Lead Market Analyst, a Chief Marketing Strategist, and a Creative Content Creator—to research, plan, and generate marketing content.
+This project leverages the **CrewAI** framework and **Google Gemini** models to automate the creation of comprehensive marketing strategies. It orchestrates a team of autonomous AI agents—a Lead Market Analyst, a Chief Marketing Strategist, an Advertorial Writer, and a Creative Content Creator—to research, plan, and generate marketing content.
 
 ## Features
 
@@ -63,9 +63,32 @@ marketing_posts -h
 
 ### Select a Specific Model
 Use the `--model` flag to experiment with different Gemini versions (e.g., faster Flash models or experimental builds):
-```bash
-marketing_posts company_info.yaml --model gemini/gemini-2.0-flash
-```
+## Running the Application
+
+1.  **Prepare your Input**:
+    *   Edit the `companies/tjsammtg.yaml` file (or create your own in the `companies/` directory) with the customer's domain, project description, and company name.
+
+2.  **Ensure Context (Optional but Recommended)**:
+    *   Create a folder matching your company name (e.g., `TJ Sam Mortgage/`).
+    *   Add PDF or text documents to it.
+
+3.  **Run the script**:
+    ```bash
+    marketing_posts tjsammtg.yaml
+    # OR explicitly
+    marketing_posts companies/tjsammtg.yaml
+    ```
+    *   (Note: The script automatically checks the `companies/` folder if the file isn't found in the root).
+
+4.  **CLI Options**:
+    *   **View Available Models**: List all compatible Gemini models available to your API key:
+        ```bash
+        marketing_posts -h
+        ```
+    *   **Select a Specific Model**: Use the `--model` flag to experiment with different Gemini versions (e.g., faster Flash models or experimental builds):
+        ```bash
+        marketing_posts company_info.yaml --model gemini/gemini-2.0-flash
+        ```
 
 ## Knowledge Base Integration
 

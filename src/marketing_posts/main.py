@@ -35,13 +35,20 @@ Available Models (Partial List):
 
     # Check if a YAML file path is provided
     if args.file:
+        file_path = Path(args.file)
+        if not file_path.exists():
+            # Check in companies/ directory
+            companies_path = Path("companies") / args.file
+            if companies_path.exists():
+                file_path = companies_path
+            else:
+                 print(f"Error: File {args.file} not found locally or in companies/ directory.")
+                 sys.exit(1)
+
         try:
-            with open(args.file, 'r') as f:
+            with open(file_path, 'r') as f:
                 inputs = yaml.safe_load(f)
-            print(f"Loaded inputs from {args.file}")
-        except FileNotFoundError:
-            print(f"Error: File {args.file} not found.")
-            sys.exit(1)
+            print(f"Loaded inputs from {file_path}")
         except yaml.YAMLError as exc:
             print(f"Error parsing YAML file: {exc}")
             sys.exit(1)

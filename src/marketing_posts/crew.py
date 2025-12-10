@@ -186,6 +186,15 @@ class MarketingPostsCrew():
 		
 		# Filter out the master report itself if it already exists
 		md_files = [f for f in md_files if os.path.basename(f) != "master-report.md"]
+
+		if not md_files:
+			print(f"\n[Master Report] No agent reports found. Skipping master report generation.")
+			try:
+				os.rmdir(self.folder_path)
+				print(f"[Cleanup] Removed empty report directory: {self.folder_path}")
+			except OSError:
+				print(f"[Cleanup] Directory not empty, could not remove: {self.folder_path}")
+			return
 		
 		# Sort files to ensure deterministic order (e.g., by name)
 		# Since our filenames are descriptive, sorting by name is reasonable,

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jeremiahakin/test/synnovai_marketing_generator/.venv/bin/marketing_posts", line 3, in <module>
+    from marketing_posts.main import run
+  File "/Users/jeremiahakin/test/synnovai_marketing_generator/src/marketing_posts/main.py", line 6, in <module>
+    from marketing_posts.knowledge_loader import KnowledgeLoader
+  File "/Users/jeremiahakin/test/synnovai_marketing_generator/src/marketing_posts/knowledge_loader.py", line 4, in <module>
+    import pypdf
+ModuleNotFoundError: No module named 'pypdf'

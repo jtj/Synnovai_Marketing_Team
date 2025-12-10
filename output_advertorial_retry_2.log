@@ -1,0 +1,255 @@
+Loaded inputs from mei.yaml
+Scanning knowledge folder: /Users/jeremiahakin/test/synnovai_marketing_generator/MEI
+Using model: gemini/gemini-1.5-flash-latest
+╭───────── Crew Execution Started ──────────╮
+│                                           │
+│  Crew Execution Started                   │
+│  Name: crew                               │
+│  ID:                                      │
+│  dd125f24-445f-4d28-b96d-7c06d73f4c03     │
+│  Tool Args:                               │
+│                                           │
+│                                           │
+╰───────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    8323a68e-de38-428b-9012-d2377a8be070)
+    Status: Executing Task...╭──────────── 🤖 Agent Started ─────────────╮
+│                                           │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Task: Conduct a thorough research about  │
+│  the customer and competitors in the      │
+│  context of engineeringinspect.com. Make  │
+│  sure you find any interesting and        │
+│  relevant information given the current   │
+│  year is 2025. We are working with them   │
+│  on the following project: MEI utilizes   │
+│  advanced technology and innovative       │
+│  methodologies to perform thorough and    │
+│  meticulous inspections. By identifying   │
+│  potential issues early, MEI offers       │
+│  practical solutions to mitigate risks,   │
+│  helping developers, contractors, and     │
+│  project owners achieve their goals       │
+│  efficiently and effectively.             │
+│                                           │
+│                                           │
+│  Customer Domain: Special Inspection      │
+│  Agency in the San Francisco Bay Area     │
+│  Project Overview: Creating a             │
+│  comprehensive marketing campaign to      │
+│  boost awareness of MEI's brand, brand,   │
+│  services, and quality. The marketing     │
+│  campaign should include Lead Magnets     │
+│  and  Advertorials as well as social      │
+│  media posts                              │
+│  .                                        │
+│  Check for additional context in the      │
+│  following content: No local company      │
+│  knowledge found.                         │
+│  Also check this URL if provided (but do  │
+│  not attempt to scrape gemini.google.com  │
+│  links directly): No additional URL       │
+│  provided..  If a valid external URL is   │
+│  provided, use the ScrapeWebsiteTool to   │
+│  read it to gather more context.          │
+│                                           │
+│                                           │
+╰───────────────────────────────────────────╯
+
+ERROR:root:Google Gemini API error: 404 - models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}[0m
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}[0m
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    8323a68e-de38-428b-9012-d2377a8be070)
+    Status: Executing Task...
+    └── ❌ LLM Failed╭──────────────── LLM Error ────────────────╮
+│                                           │
+│  ❌ LLM Call Failed                       │
+│  Error: Google Gemini API error: 404 -    │
+│  models/gemini-1.5-flash-latest is not    │
+│  found for API version v1beta, or is not  │
+│  supported for generateContent. Call      │
+│  ListModels to see the list of available  │
+│  models and their supported methods.      │
+│                                           │
+╰───────────────────────────────────────────╯
+
+╭──────────── 🤖 Agent Started ─────────────╮
+│                                           │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Task: Conduct a thorough research about  │
+│  the customer and competitors in the      │
+│  context of engineeringinspect.com. Make  │
+│  sure you find any interesting and        │
+│  relevant information given the current   │
+│  year is 2025. We are working with them   │
+│  on the following project: MEI utilizes   │
+│  advanced technology and innovative       │
+│  methodologies to perform thorough and    │
+│  meticulous inspections. By identifying   │
+│  potential issues early, MEI offers       │
+│  practical solutions to mitigate risks,   │
+│  helping developers, contractors, and     │
+│  project owners achieve their goals       │
+│  efficiently and effectively.             │
+│                                           │
+│                                           │
+│  Customer Domain: Special Inspection      │
+│  Agency in the San Francisco Bay Area     │
+│  Project Overview: Creating a             │
+│  comprehensive marketing campaign to      │
+│  boost awareness of MEI's brand, brand,   │
+│  services, and quality. The marketing     │
+│  campaign should include Lead Magnets     │
+│  and  Advertorials as well as social      │
+│  media posts                              │
+│  .                                        │
+│  Check for additional context in the      │
+│  following content: No local company      │
+│  knowledge found.                         │
+│  Also check this URL if provided (but do  │
+│  not attempt to scrape gemini.google.com  │
+│  links directly): No additional URL       │
+│  provided..  If a valid external URL is   │
+│  provided, use the ScrapeWebsiteTool to   │
+│  read it to gather more context.          │
+│                                           │
+│                                           │
+╰───────────────────────────────────────────╯
+
+ERROR:root:Google Gemini API error: 404 - models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}[0m
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}[0m
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    8323a68e-de38-428b-9012-d2377a8be070)
+    Status: Executing Task...
+    ├── ❌ LLM Failed
+    └── ❌ LLM Failed╭──────────────── LLM Error ────────────────╮
+│                                           │
+│  ❌ LLM Call Failed                       │
+│  Error: Google Gemini API error: 404 -    │
+│  models/gemini-1.5-flash-latest is not    │
+│  found for API version v1beta, or is not  │
+│  supported for generateContent. Call      │
+│  ListModels to see the list of available  │
+│  models and their supported methods.      │
+│                                           │
+╰───────────────────────────────────────────╯
+
+╭──────────── 🤖 Agent Started ─────────────╮
+│                                           │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Task: Conduct a thorough research about  │
+│  the customer and competitors in the      │
+│  context of engineeringinspect.com. Make  │
+│  sure you find any interesting and        │
+│  relevant information given the current   │
+│  year is 2025. We are working with them   │
+│  on the following project: MEI utilizes   │
+│  advanced technology and innovative       │
+│  methodologies to perform thorough and    │
+│  meticulous inspections. By identifying   │
+│  potential issues early, MEI offers       │
+│  practical solutions to mitigate risks,   │
+│  helping developers, contractors, and     │
+│  project owners achieve their goals       │
+│  efficiently and effectively.             │
+│                                           │
+│                                           │
+│  Customer Domain: Special Inspection      │
+│  Agency in the San Francisco Bay Area     │
+│  Project Overview: Creating a             │
+│  comprehensive marketing campaign to      │
+│  boost awareness of MEI's brand, brand,   │
+│  services, and quality. The marketing     │
+│  campaign should include Lead Magnets     │
+│  and  Advertorials as well as social      │
+│  media posts                              │
+│  .                                        │
+│  Check for additional context in the      │
+│  following content: No local company      │
+│  knowledge found.                         │
+│  Also check this URL if provided (but do  │
+│  not attempt to scrape gemini.google.com  │
+│  links directly): No additional URL       │
+│  provided..  If a valid external URL is   │
+│  provided, use the ScrapeWebsiteTool to   │
+│  read it to gather more context.          │
+│                                           │
+│                                           │
+╰───────────────────────────────────────────╯
+
+ERROR:root:Google Gemini API error: 404 - models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}[0m
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}[0m
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    8323a68e-de38-428b-9012-d2377a8be070)
+    Status: Executing Task...
+    ├── ❌ LLM Failed
+    ├── ❌ LLM Failed
+    └── ❌ LLM FailedAn error occurred: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+
+Generating Master Report...
+╭──────────────── LLM Error ────────────────╮
+│                                           │
+│  ❌ LLM Call Failed                       │
+│  Error: Google Gemini API error: 404 -    │
+│  models/gemini-1.5-flash-latest is not    │
+│  found for API version v1beta, or is not  │
+│  supported for generateContent. Call      │
+│  ListModels to see the list of available  │
+│  models and their supported methods.      │
+│                                           │
+╰───────────────────────────────────────────╯
+╭────────────── Crew Failure ───────────────╮
+│                                           │
+│  Crew Execution Failed                    │
+│  Name: crew                               │
+│  ID:                                      │
+│  dd125f24-445f-4d28-b96d-7c06d73f4c03     │
+│  Tool Args:                               │
+│  Final Output:                            │
+│                                           │
+│                                           │
+╰───────────────────────────────────────────╯
+
+
+
+[Master Report] Generated at: Reports/20251209_215135_mei/master-report.md
+╭────────────── Task Failure ───────────────╮
+│                                           │
+│  Task Failed                              │
+│  Name: research_task                      │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Tool Args:                               │
+│                                           │
+│                                           │
+╰───────────────────────────────────────────╯
+
+╭───────────── Tracing Status ──────────────╮
+│                                           │
+│  Info: Tracing is disabled.               │
+│                                           │
+│  To enable tracing, do any one of these:  │
+│  • Set tracing=True in your Crew/Flow     │
+│  code                                     │
+│  • Set CREWAI_TRACING_ENABLED=true in     │
+│  your project's .env file                 │
+│  • Run: crewai traces enable              │
+│                                           │
+╰───────────────────────────────────────────╯

@@ -1,0 +1,1916 @@
+Loaded inputs from tjsammtg.yaml
+Loaded local Gem Knowledge from gem_knowledge.md
+Scanning knowledge folder: /Users/jeremiahakin/test/synnovai_marketing_generator/TJ Sam Mortgage
+Loading document: TJ Sam Mortgage/company_brief.txt
+Loaded additional knowledge from folder 'TJ Sam Mortgage'
+Using model: gemini/gemini-2.0-flash
+╭───────── Crew Execution Started ──────────╮
+│                                           │
+│  Crew Execution Started                   │
+│  Name: crew                               │
+│  ID:                                      │
+│  acea7028-8c24-4710-8530-b01b0e1cde6e     │
+│  Tool Args:                               │
+│                                           │
+│                                           │
+╰───────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    0a7cf8c9-3b34-4c53-8892-0c556f37f6a0)
+    Status: Executing Task...
+    └── 🧠 Thinking...
+╭──────────── 🤖 Agent Started ─────────────╮
+│                                           │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Task: Conduct a thorough research about  │
+│  the customer and competitors in the      │
+│  context of tjsammtg.co/. Make sure you   │
+│  find any interesting and relevant        │
+│  information given the current year is    │
+│  2025. We are working with them on the    │
+│  following project: Getting a mortgage    │
+│  can seem overwhelming; let us simplify   │
+│  it for you so you can get on with your   │
+│  own life.                                │
+│                                           │
+│                                           │
+│  Customer Domain: Mortgage Broker in the  │
+│  Denton TX Area                           │
+│  Project Overview: Creating a             │
+│  comprehensive marketing campaign to      │
+│  boost awareness and adoption of TJ Sam   │
+│  Mortgage's services among homebuyers,    │
+│  people looking to refiniance, and        │
+│  realitors who could use TJ Sam           │
+│  Mortgage's expertise to help them sell   │
+│  houses. The marketing campaign should    │
+│  include Lead Magnets and  Advertorials   │
+│  as well as social media posts            │
+│  .                                        │
+│  Check for additional context or Gem      │
+│  info in the following content: # Gem     │
+│  Knowledge Base                           │
+│                                           │
+│                                           │
+│                                           │
+│  ***                                      │
+│                                           │
+│  # The TJ Sam Mortgage Master Blueprint:  │
+│  2025 Strategy                            │
+│  **Mission:** Transition from "Loan       │
+│  Originator" to "Trusted Educator" and    │
+│  Strategic Partner.                       │
+│                                           │
+│  ---                                      │
+│                                           │
+│  ## I. Market Context & Core Philosophy   │
+│  [cite_start]The Texas housing market     │
+│  has shifted from the frantic "speed"     │
+│  market of the past to a "buyer's         │
+│  market" defined by affordability         │
+│  anxiety and choice[cite: 4, 11, 13].     │
+│  * [cite_start]**The Problem:** Buyers    │
+│  are no longer driven by FOMO (Fear Of    │
+│  Missing Out) but by FOOP (Fear Of        │
+│  Overpaying)[cite: 21].                   │
+│  * **The Solution:** You must stop        │
+│  competing on rate and speed.             │
+│  [cite_start]You must compete on          │
+│  **Certainty, Education, and Niche        │
+│  Problem-Solving**[cite: 22, 35].         │
+│  * [cite_start]**The Identity:** You are  │
+│  not a bank selling a product; you are a  │
+│  Broker selling expertise and             │
+│  choice[cite: 37].                        │
+│                                           │
+│  ---                                      │
+│                                           │
+│  ## II. The 4-Channel Advertising         │
+│  Portfolio                                │
+│  [cite_start]To build a resilient         │
+│  business, we utilize four distinct       │
+│  channels, each with a specific           │
+│  goal[cite: 40, 141].                     │
+│                                           │
+│  ### 1. THE ENGINE: B2B Referral          │
+│  Partnerships (LinkedIn)                  │
+│  [cite_start]**Goal:** Systematize        │
+│  high-quality referrals from agents,      │
+│  CPAs, and advisors[cite: 43].            │
+│  * **Strategy:** Shift from asking for    │
+│  business to offering value.              │
+│  [cite_start]Position yourself as a       │
+│  strategic partner who helps agents       │
+│  close difficult deals[cite: 60, 200].    │
+│  * **Key Tactics:**                       │
+│      * [cite_start]**The "Deal            │
+│  Autopsy":** Post stories on LinkedIn     │
+│  about saving deals other lenders denied  │
+│  (e.g., Self-Employed or Appraisal        │
+│  Gaps)[cite: 202, 206].                   │
+│      * [cite_start]**The Agent            │
+│  Webinar:** Host educational sessions     │
+│  (e.g., "How to Win VA Offers") to teach  │
+│  agents how to sell more[cite: 220,       │
+│  224].                                    │
+│      * [cite_start]**Co-Branded           │
+│  Assets:** Provide white-label guides     │
+│  (e.g., "Renovation Cheat Sheet") that    │
+│  agents can give to their clients[cite:   │
+│  237, 246].                               │
+│                                           │
+│  ### 2. THE ASSET: Organic Search (SEO)   │
+│  [cite_start]**Goal:** Build an owned     │
+│  audience of high-intent researchers to   │
+│  reduce reliance on paid leads[cite: 44,  │
+│  74].                                     │
+│  * [cite_start]**Strategy:** Create       │
+│  content for the "Research Phase" (Top    │
+│  of Funnel) and "Buying Phase" (Bottom    │
+│  of Funnel)[cite: 86].                    │
+│  * **Key Tactics:**                       │
+│      * [cite_start]**Ultimate Guides:**   │
+│  Long-form blog posts answering specific  │
+│  questions (e.g., "Texas Down Payment     │
+│  Assistance Guide")[cite: 263].           │
+│      * [cite_start]**Hyper-Local Service  │
+│  Pages:** Static pages targeting          │
+│  specific locations (e.g., "Mortgage      │
+│  Broker in Frisco")[cite: 293].           │
+│      * [cite_start]**Google Business      │
+│  Profile:** Optimize for local SEO by     │
+│  seeding Q&A sections and getting         │
+│  keyword-rich reviews[cite: 297, 301].    │
+│                                           │
+│  ### 3. THE HUNT: High-Intent Paid        │
+│  Search (Google Ads)                      │
+│  [cite_start]**Goal:** Capture active     │
+│  demand from borrowers with specific      │
+│  problems[cite: 46, 318].                 │
+│  * **Strategy:** Avoid broad keywords     │
+│  like "Mortgage Rates."                   │
+│  [cite_start]Target niche demographics    │
+│  and specific pain points[cite: 317].     │
+│  * **Key Tactics:**                       │
+│      * [cite_start]**Niche                │
+│  Demographics:** Target unique            │
+│  professions (e.g., "Physician Loans in   │
+│  Houston")[cite: 324].                    │
+│      * [cite_start]**Problem-Solution:**  │
+│  Target "Cash-Out for Renovation" or      │
+│  "Divorce Buyout" keywords[cite: 351,     │
+│  356].                                    │
+│      * [cite_start]**Hyper-Local          │
+│  Authority:** Target "Best Mortgage       │
+│  Broker in Austin" using negative         │
+│  keywords to filter out career            │
+│  seekers[cite: 365, 378].                 │
+│                                           │
+│  ### 4. THE FARM: Low-Cost Demand         │
+│  Creation (Meta/Social)                   │
+│  [cite_start]**Goal:** Generate low-cost  │
+│  leads ($4-$16) and nurture them over     │
+│  6-12 months[cite: 48, 115].              │
+│  * **Strategy:** Never advertise "Free    │
+│  Quote." [cite_start]Use "Lead Magnets"   │
+│  to capture contact info and enter them   │
+│  into an automated nurture                │
+│  sequence[cite: 123, 387].                │
+│  * **Key Tactics:**                       │
+│      * [cite_start]**Lead Magnets:**      │
+│  Offer downloadable PDFs (e.g., "The      │
+│  2025 Texas FTHB Guide")[cite: 394].      │
+│      * [cite_start]**Life Events:**       │
+│  Target users who are "Newly Engaged" or  │
+│  "Recently Moved"[cite: 409, 419].        │
+│      * [cite_start]**Database             │
+│  Reactivation:** Upload past client       │
+│  lists for "Mortgage Check-Up"            │
+│  retargeting ads[cite: 424].              │
+│                                           │
+│  ---                                      │
+│                                           │
+│  ## III. The Realtor "Co-Pilot" Growth    │
+│  Strategy (Denton Focus)                  │
+│  [cite_start]**Goal:** Establish 5 new,   │
+│  active Realtor partnerships in Denton    │
+│  within year one[cite: 1149].             │
+│  **Differentiation:** Unlike competitors  │
+│  (The Wood Group, Service First), we      │
+│  avoid cookie-cutter marketing.           │
+│  [cite_start]We act as a business growth  │
+│  engine for agents[cite: 1135, 1162].     │
+│                                           │
+│  * [cite_start]**Pillar 1: Proactive      │
+│  Value:** Provide the "Realtor            │
+│  Partnership Playbook" (co-marketing      │
+│  blueprints) and exclusive market         │
+│  insights[cite: 1176, 1210].              │
+│  * [cite_start]**Pillar 2: Flawless       │
+│  Execution:** Guarantee communication     │
+│  and speed to protect the agent's         │
+│  reputation[cite: 1184].                  │
+│  * [cite_start]**Pillar 3: Shared         │
+│  Growth:** Execute "Lunch & Learn"        │
+│  events (e.g., leveraging VA loans) to    │
+│  facilitate face-to-face                  │
+│  networking[cite: 1221].                  │
+│  * [cite_start]**Proof:** Use case        │
+│  studies/advertorials (e.g., "How a       │
+│  Proactive Lender Saved a Deal in 21      │
+│  Days") to prove value[cite: 1245].       │
+│                                           │
+│  ---                                      │
+│                                           │
+│  ## IV. Technical Execution:              │
+│  Programmatic SEO (GoHighLevel)           │
+│  [cite_start]**Goal:** Scale content      │
+│  production from manual ("Artisanal") to  │
+│  automated ("Industrial") to capture      │
+│  long-tail search traffic[cite: 450,      │
+│  455].                                    │
+│  [cite_start]**The Equation:** Total      │
+│  Pages = (Head Term + Modifiers) × Data   │
+│  Availability[cite: 474].                 │
+│                                           │
+│  * [cite_start]**The Method:** Use        │
+│  GoHighLevel's Blog Engine (not the       │
+│  website builder) to handle volume[cite:  │
+│  520].                                    │
+│  * **The Construction:**                  │
+│      * [cite_start]**Data Sources:** Use  │
+│  Public/Open data (Tier 1) or             │
+│  Proprietary data (Tier 3) to ensure      │
+│  unique value[cite: 501, 508].            │
+│      * [cite_start]**HTML Payloads:**     │
+│  Pre-assemble the HTML structure in a     │
+│  spreadsheet (CSV) before importing to    │
+│  bypass GHL limitations[cite: 526].       │
+│      * [cite_start]**Avoid Spam:**        │
+│  Ensure >30% uniqueness per page to       │
+│  satisfy Google's "Helpful Content"       │
+│  algorithms[cite: 593].                   │
+│                                           │
+│  ---                                      │
+│                                           │
+│  ## V. Website Optimization: The          │
+│  C.O.R.E. Framework                       │
+│  [cite_start]**Goal:** Align website      │
+│  design with neuroscience to maximize     │
+│  conversion[cite: 720].                   │
+│                                           │
+│  * **C - Cognitive Flow:** Minimize       │
+│  "Cognitive Load." [cite_start]Use        │
+│  familiar layouts (logo top-left) and     │
+│  chunk information to prevent decision    │
+│  paralysis[cite: 722, 739].               │
+│  * **O - Ocular Guidance:** Control       │
+│  where users look. [cite_start]Use        │
+│  visual hierarchy (size, contrast) to     │
+│  direct eyes to the CTA and avoid         │
+│  "Banner Blindness"[cite: 789, 804].      │
+│  * **R - Reward Pathways:** Gamify the    │
+│  experience. [cite_start]Use progress     │
+│  bars and "streaks" to trigger dopamine   │
+│  loops that encourage completion and      │
+│  return visits[cite: 837, 858].           │
+│  * **E - Emotional Resonance:** Build     │
+│  trust in milliseconds. [cite_start]Use   │
+│  consistent branding, storytelling, and   │
+│  human faces to create safety and         │
+│  lasting memory[cite: 884, 905].          │
+│                                           │
+│                                           │
+│                                           │
+│  ### [PASTE YOUR GEM CONTENT HERE]        │
+│                                           │
+│                                           │
+│                                           │
+│                                           │
+│  # Local Company Documents                │
+│                                           │
+│                                           │
+│  --- Document: company_brief.txt ---      │
+│  The company tagline is 'Mortgages Made   │
+│  Simple'. Founded in 2010.                │
+│                                           │
+│  Also check this URL if provided (but do  │
+│  not attempt to scrape gemini.google.com  │
+│  links directly):                         │
+│  https://gemini.google.com/gem/1d0EIXa3J  │
+│  zP1BisSOu9MdXSa9z9roKX3U?usp=sharing.    │
+│  If a valid external URL is provided,     │
+│  use the ScrapeWebsiteTool to read it to  │
+│  gather more context.                     │
+│                                           │
+│                                           │
+╰───────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    0a7cf8c9-3b34-4c53-8892-0c556f37f6a0)
+    Status: Executing Task...
+    ├── 🔧 Used Search the internet with 
+    │   Serper (1)
+    └── 🧠 Thinking...╭───────── 🔧 Agent Tool Execution ─────────╮
+│                                           │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Thought: Okay, I need to conduct         │
+│  thorough research about the customer,    │
+│  TJ Sam Mortgage, their target audience,  │
+│  and their competitors in the Denton, TX  │
+│  area. I will focus on gathering          │
+│  information relevant to the current      │
+│  year, 2025. The goal is to provide       │
+│  insights that can guide the development  │
+│  of a comprehensive marketing campaign,   │
+│  including lead magnets, advertorials,    │
+│  and social media posts. I will use the   │
+│  provided "TJ Sam Mortgage Master         │
+│  Blueprint: 2025 Strategy" and "Local     │
+│  Company Documents" for initial context,  │
+│  and then use the search tool to find     │
+│  up-to-date market data, competitor       │
+│  analysis, and customer demographics in   │
+│  the Denton area. I'll also look for      │
+│  information on the Texas housing market  │
+│  and mortgage industry trends in 2025.    │
+│                                           │
+│  Using Tool: Search the internet with     │
+│  Serper                                   │
+│                                           │
+╰───────────────────────────────────────────╯
+╭─────────────── Tool Input ────────────────╮
+│                                           │
+│  {                                        │
+│    "search_query": "mortgage market       │
+│  trends Texas 2025"                       │
+│  }                                        │
+│                                           │
+╰───────────────────────────────────────────╯
+╭─────────────── Tool Output ───────────────╮
+│                                           │
+│  {'searchParameters': {'q': 'mortgage     │
+│  market trends Texas 2025', 'type':       │
+│  'search', 'num': 10, 'engine':           │
+│  'google'}, 'organic': [{'title':         │
+│  'Announcement: 2025 Report on Mortgage   │
+│  Lending in Texas', 'link':               │
+│  'https://www.sml.texas.gov/news/announc  │
+│  ement-2025-report-on-mortgage-lending-i  │
+│  n-texas/', 'snippet': 'The report also   │
+│  includes detailed breakdowns of          │
+│  permissible liens, loan types, closing   │
+│  costs, interest rates, and market share  │
+│  trends. This ...', 'position': 1},       │
+│  {'title': '2025 Texas Real Estate        │
+│  Forecast', 'link':                       │
+│  'https://trerc.tamu.edu/article/2025-te  │
+│  xas-real-estate-forecast/', 'snippet':   │
+│  'Prices: Moderating population growth    │
+│  and lower interest rates signal some     │
+│  price appreciation in 2025. Median home  │
+│  price will end the year just above       │
+│  $350,000.', 'position': 2, 'sitelinks':  │
+│  [{'title': 'Key Macroeconomic Drivers',  │
+│  'link':                                  │
+│  'https://trerc.tamu.edu/article/2025-te  │
+│  xas-real-estate-forecast/#key-macroecon  │
+│  omic-drivers'}, {'title':                │
+│  'Single-Family Housing', 'link':         │
+│  'https://trerc.tamu.edu/article/2025-te  │
+│  xas-real-estate-forecast/#single-family  │
+│  -housing'}, {'title': 'Multifamily       │
+│  Housing', 'link':                        │
+│  'https://trerc.tamu.edu/article/2025-te  │
+│  xas-real-estate-forecast/#multifamily-h  │
+│  ousing'}]}, {'title': 'Texas Housing     │
+│  Market Predictions 2025 - Ramsey         │
+│  Solutions', 'link':                      │
+│  'https://www.ramseysolutions.com/real-e  │
+│  state/texas-housing-market?srsltid=AfmB  │
+│  Ooren7eD6hrZ7O34SjgPdnYOW-OVzbix1vGB4ZJ  │
+│  I0DSi-FzDucMI', 'snippet': 'Good news    │
+│  for buyers: Mortgage rates are holding   │
+│  steady. The 15-year fixed rate sits at   │
+│  5.89% as of the end of June 2025, down   │
+│  about 0.27% from ...', 'position': 3},   │
+│  {'title': 'Home prices are poised to     │
+│  dip in 22 U.S. cities next year, a new   │
+│  ...', 'link':                            │
+│  'https://www.cbsnews.com/news/housing-m  │
+│  arket-forecast-2026-price-declines-real  │
+│  -estate-mortgage/', 'snippet':           │
+│  "Mortgage rates are expected to dip to   │
+│  an average of 6.3% next year, a slight   │
+│  drop from 2025's 6.6% average rate.      │
+│  Lower borrowing costs, as well ...",     │
+│  'position': 4}, {'title': 'Texas         │
+│  Housing Market: 2025 Home Prices ...     │
+│                                           │
+╰───────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    0a7cf8c9-3b34-4c53-8892-0c556f37f6a0)
+    Status: Executing Task...
+    ├── 🔧 Used Search the internet with 
+    │   Serper (1)
+    └── 🔧 Used Search the internet with 
+        Serper (2)
+╭───────── 🔧 Agent Tool Execution ─────────╮
+│                                           │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Thought: Thought: The search results     │
+│  provide some good initial insights into  │
+│  the Texas housing market in 2025. I see  │
+│  a mix of articles and reports            │
+│  discussing price trends, mortgage        │
+│  rates, and forecasts. Key takeaways      │
+│  include:                                 │
+│  *   **Price Appreciation:**              │
+│  Appreciation will return to              │
+│  historically normal levels, around 3%    │
+│  to 4%. The Texas Housing Market will     │
+│  feel much calmer and more....(Norada     │
+│  Real Estate)                             │
+│  *   **Mortgage Rates:** Rates hovered    │
+│  around mid-6% range through most of      │
+│  2025. (markandal.com)                    │
+│  *   **Buyer's Market:** The market is    │
+│  shifting towards a buyer's market.       │
+│  *   **Price Declines:** Some sources     │
+│  predict slight price declines in some    │
+│  cities.                                  │
+│  *   **Good time to buy**: Stabilized     │
+│  home prices and favorable mortgage       │
+│  rates make it a fantastic year to buy a  │
+│  home in Texas.                           │
+│  Next, I need to focus on the Denton      │
+│  area specifically.                       │
+│                                           │
+│  Using Tool: Search the internet with     │
+│  Serper                                   │
+│                                           │
+╰───────────────────────────────────────────╯
+╭─────────────── Tool Input ────────────────╮
+│                                           │
+│  {                                        │
+│    "search_query": "Denton TX housing     │
+│  market 2025"                             │
+│  }                                        │
+│                                           │
+╰───────────────────────────────────────────╯
+╭─────────────── Tool Output ───────────────╮
+│                                           │
+│  {'searchParameters': {'q': 'Denton TX    │
+│  housing market 2025', 'type': 'search',  │
+│  'num': 10, 'engine': 'google'},          │
+│  'organic': [{'title': 'Denton, TX        │
+│  Housing Market: 2025 Home Prices &       │
+│  Trends | Zillow', 'link':                │
+│  'https://www.zillow.com/home-values/435  │
+│  1/denton-tx/', 'snippet': 'The average   │
+│  home value in Denton, TX is $350332,     │
+│  down 4.4% over the past year. Learn      │
+│  more about the Denton housing market     │
+│  and real estate trends.', 'position':    │
+│  1}, {'title': 'Denton Housing Market:    │
+│  House Prices & Trends - Redfin',         │
+│  'link':                                  │
+│  'https://www.redfin.com/city/5145/TX/De  │
+│  nton/housing-market', 'snippet': 'In     │
+│  October 2025, Denton home prices were    │
+│  down 6.3% compared to last year,         │
+│  selling for a median price of $375K. On  │
+│  average, homes in Denton sell after 95   │
+│  days on ...', 'position': 2,             │
+│  'sitelinks': [{'title': 'Trends',        │
+│  'link':                                  │
+│  'https://www.redfin.com/city/5145/TX/De  │
+│  nton/housing-market#trends'}, {'title':  │
+│  'Demand', 'link':                        │
+│  'https://www.redfin.com/city/5145/TX/De  │
+│  nton/housing-market#demand'}, {'title':  │
+│  'Schools', 'link':                       │
+│  'https://www.redfin.com/city/5145/TX/De  │
+│  nton/housing-market#schools'}]},         │
+│  {'title': "Denton's housing market       │
+│  lately: Property tax loopholes and a     │
+│  sharp ...", 'link':                      │
+│  'https://www.keranews.org/business-econ  │
+│  omy/2025-01-15/dentons-housing-market-l  │
+│  ately-property-tax-loopholes-and-a-shar  │
+│  p-drop-off-in-home-sales', 'snippet':    │
+│  'Median prices in the city of Denton     │
+│  ended 2024 down 0.4% year-over-year.     │
+│  Average prices fell 6%. With prevailing  │
+│  mortgage rates back near 7%, ...',       │
+│  'position': 3}, {'title': 'Denton TX     │
+│  Real Estate Market Trends & Forecast &   │
+│  Insights', 'link':                       │
+│  'https://ayrealtygroup.com/denton-real-  │
+│  estate-agent-guide/market-trends/',      │
+│  'snippet': '2025 Market Overview:        │
+│  Denton TX at a Glance ; Median Home      │
+│  Price (2025 YTD): $387,000 (↑ 4.2% YoY)  │
+│  ; Average Days on Market: 31 (quicker    │
+│  sales than 2024).', 'position': 4},      │
+│  {'title': 'Denton, TX Real Estate (2025  │
+│  Guide) | Save Up to 75% Rebate with      │
+│  ...', 'link':                            │
+│  'https://www.realpha.com/blog/denton-tx  │
+│  -real-estate', 'snippet': "2025 Update:  │
+│  Dent...                                  │
+│                                           │
+╰───────────────────────────────────────────╯
+
+[91mReceived None or empty response from LLM call.[0m
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: Invalid response from LLM call - None or empty.[0m
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: Invalid response from LLM call - None or empty.[0m
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    0a7cf8c9-3b34-4c53-8892-0c556f37f6a0)
+    Status: Executing Task...
+    ├── 🔧 Used Search the internet with 
+    │   Serper (1)
+    └── 🔧 Used Search the internet with 
+        Serper (2)╭──────────── 🤖 Agent Started ─────────────╮
+│                                           │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Task: Conduct a thorough research about  │
+│  the customer and competitors in the      │
+│  context of tjsammtg.co/. Make sure you   │
+│  find any interesting and relevant        │
+│  information given the current year is    │
+│  2025. We are working with them on the    │
+│  following project: Getting a mortgage    │
+│  can seem overwhelming; let us simplify   │
+│  it for you so you can get on with your   │
+│  own life.                                │
+│                                           │
+│                                           │
+│  Customer Domain: Mortgage Broker in the  │
+│  Denton TX Area                           │
+│  Project Overview: Creating a             │
+│  comprehensive marketing campaign to      │
+│  boost awareness and adoption of TJ Sam   │
+│  Mortgage's services among homebuyers,    │
+│  people looking to refiniance, and        │
+│  realitors who could use TJ Sam           │
+│  Mortgage's expertise to help them sell   │
+│  houses. The marketing campaign should    │
+│  include Lead Magnets and  Advertorials   │
+│  as well as social media posts            │
+│  .                                        │
+│  Check for additional context or Gem      │
+│  info in the following content: # Gem     │
+│  Knowledge Base                           │
+│                                           │
+│                                           │
+│                                           │
+│  ***                                      │
+│                                           │
+│  # The TJ Sam Mortgage Master Blueprint:  │
+│  2025 Strategy                            │
+│  **Mission:** Transition from "Loan       │
+│  Originator" to "Trusted Educator" and    │
+│  Strategic Partner.                       │
+│                                           │
+│  ---                                      │
+│                                           │
+│  ## I. Market Context & Core Philosophy   │
+│  [cite_start]The Texas housing market     │
+│  has shifted from the frantic "speed"     │
+│  market of the past to a "buyer's         │
+│  market" defined by affordability         │
+│  anxiety and choice[cite: 4, 11, 13].     │
+│  * [cite_start]**The Problem:** Buyers    │
+│  are no longer driven by FOMO (Fear Of    │
+│  Missing Out) but by FOOP (Fear Of        │
+│  Overpaying)[cite: 21].                   │
+│  * **The Solution:** You must stop        │
+│  competing on rate and speed.             │
+│  [cite_start]You must compete on          │
+│  **Certainty, Education, and Niche        │
+│  Problem-Solving**[cite: 22, 35].         │
+│  * [cite_start]**The Identity:** You are  │
+│  not a bank selling a product; you are a  │
+│  Broker selling expertise and             │
+│  choice[cite: 37].                        │
+│                                           │
+│  ---                                      │
+│                                           │
+│  ## II. The 4-Channel Advertising         │
+│  Portfolio                                │
+│  [cite_start]To build a resilient         │
+│  business, we utilize four distinct       │
+│  channels, each with a specific           │
+│  goal[cite: 40, 141].                     │
+│                                           │
+│  ### 1. THE ENGINE: B2B Referral          │
+│  Partnerships (LinkedIn)                  │
+│  [cite_start]**Goal:** Systematize        │
+│  high-quality referrals from agents,      │
+│  CPAs, and advisors[cite: 43].            │
+│  * **Strategy:** Shift from asking for    │
+│  business to offering value.              │
+│  [cite_start]Position yourself as a       │
+│  strategic partner who helps agents       │
+│  close difficult deals[cite: 60, 200].    │
+│  * **Key Tactics:**                       │
+│      * [cite_start]**The "Deal            │
+│  Autopsy":** Post stories on LinkedIn     │
+│  about saving deals other lenders denied  │
+│  (e.g., Self-Employed or Appraisal        │
+│  Gaps)[cite: 202, 206].                   │
+│      * [cite_start]**The Agent            │
+│  Webinar:** Host educational sessions     │
+│  (e.g., "How to Win VA Offers") to teach  │
+│  agents how to sell more[cite: 220,       │
+│  224].                                    │
+│      * [cite_start]**Co-Branded           │
+│  Assets:** Provide white-label guides     │
+│  (e.g., "Renovation Cheat Sheet") that    │
+│  agents can give to their clients[cite:   │
+│  237, 246].                               │
+│                                           │
+│  ### 2. THE ASSET: Organic Search (SEO)   │
+│  [cite_start]**Goal:** Build an owned     │
+│  audience of high-intent researchers to   │
+│  reduce reliance on paid leads[cite: 44,  │
+│  74].                                     │
+│  * [cite_start]**Strategy:** Create       │
+│  content for the "Research Phase" (Top    │
+│  of Funnel) and "Buying Phase" (Bottom    │
+│  of Funnel)[cite: 86].                    │
+│  * **Key Tactics:**                       │
+│      * [cite_start]**Ultimate Guides:**   │
+│  Long-form blog posts answering specific  │
+│  questions (e.g., "Texas Down Payment     │
+│  Assistance Guide")[cite: 263].           │
+│      * [cite_start]**Hyper-Local Service  │
+│  Pages:** Static pages targeting          │
+│  specific locations (e.g., "Mortgage      │
+│  Broker in Frisco")[cite: 293].           │
+│      * [cite_start]**Google Business      │
+│  Profile:** Optimize for local SEO by     │
+│  seeding Q&A sections and getting         │
+│  keyword-rich reviews[cite: 297, 301].    │
+│                                           │
+│  ### 3. THE HUNT: High-Intent Paid        │
+│  Search (Google Ads)                      │
+│  [cite_start]**Goal:** Capture active     │
+│  demand from borrowers with specific      │
+│  problems[cite: 46, 318].                 │
+│  * **Strategy:** Avoid broad keywords     │
+│  like "Mortgage Rates."                   │
+│  [cite_start]Target niche demographics    │
+│  and specific pain points[cite: 317].     │
+│  * **Key Tactics:**                       │
+│      * [cite_start]**Niche                │
+│  Demographics:** Target unique            │
+│  professions (e.g., "Physician Loans in   │
+│  Houston")[cite: 324].                    │
+│      * [cite_start]**Problem-Solution:**  │
+│  Target "Cash-Out for Renovation" or      │
+│  "Divorce Buyout" keywords[cite: 351,     │
+│  356].                                    │
+│      * [cite_start]**Hyper-Local          │
+│  Authority:** Target "Best Mortgage       │
+│  Broker in Austin" using negative         │
+│  keywords to filter out career            │
+│  seekers[cite: 365, 378].                 │
+│                                           │
+│  ### 4. THE FARM: Low-Cost Demand         │
+│  Creation (Meta/Social)                   │
+│  [cite_start]**Goal:** Generate low-cost  │
+│  leads ($4-$16) and nurture them over     │
+│  6-12 months[cite: 48, 115].              │
+│  * **Strategy:** Never advertise "Free    │
+│  Quote." [cite_start]Use "Lead Magnets"   │
+│  to capture contact info and enter them   │
+│  into an automated nurture                │
+│  sequence[cite: 123, 387].                │
+│  * **Key Tactics:**                       │
+│      * [cite_start]**Lead Magnets:**      │
+│  Offer downloadable PDFs (e.g., "The      │
+│  2025 Texas FTHB Guide")[cite: 394].      │
+│      * [cite_start]**Life Events:**       │
+│  Target users who are "Newly Engaged" or  │
+│  "Recently Moved"[cite: 409, 419].        │
+│      * [cite_start]**Database             │
+│  Reactivation:** Upload past client       │
+│  lists for "Mortgage Check-Up"            │
+│  retargeting ads[cite: 424].              │
+│                                           │
+│  ---                                      │
+│                                           │
+│  ## III. The Realtor "Co-Pilot" Growth    │
+│  Strategy (Denton Focus)                  │
+│  [cite_start]**Goal:** Establish 5 new,   │
+│  active Realtor partnerships in Denton    │
+│  within year one[cite: 1149].             │
+│  **Differentiation:** Unlike competitors  │
+│  (The Wood Group, Service First), we      │
+│  avoid cookie-cutter marketing.           │
+│  [cite_start]We act as a business growth  │
+│  engine for agents[cite: 1135, 1162].     │
+│                                           │
+│  * [cite_start]**Pillar 1: Proactive      │
+│  Value:** Provide the "Realtor            │
+│  Partnership Playbook" (co-marketing      │
+│  blueprints) and exclusive market         │
+│  insights[cite: 1176, 1210].              │
+│  * [cite_start]**Pillar 2: Flawless       │
+│  Execution:** Guarantee communication     │
+│  and speed to protect the agent's         │
+│  reputation[cite: 1184].                  │
+│  * [cite_start]**Pillar 3: Shared         │
+│  Growth:** Execute "Lunch & Learn"        │
+│  events (e.g., leveraging VA loans) to    │
+│  facilitate face-to-face                  │
+│  networking[cite: 1221].                  │
+│  * [cite_start]**Proof:** Use case        │
+│  studies/advertorials (e.g., "How a       │
+│  Proactive Lender Saved a Deal in 21      │
+│  Days") to prove value[cite: 1245].       │
+│                                           │
+│  ---                                      │
+│                                           │
+│  ## IV. Technical Execution:              │
+│  Programmatic SEO (GoHighLevel)           │
+│  [cite_start]**Goal:** Scale content      │
+│  production from manual ("Artisanal") to  │
+│  automated ("Industrial") to capture      │
+│  long-tail search traffic[cite: 450,      │
+│  455].                                    │
+│  [cite_start]**The Equation:** Total      │
+│  Pages = (Head Term + Modifiers) × Data   │
+│  Availability[cite: 474].                 │
+│                                           │
+│  * [cite_start]**The Method:** Use        │
+│  GoHighLevel's Blog Engine (not the       │
+│  website builder) to handle volume[cite:  │
+│  520].                                    │
+│  * **The Construction:**                  │
+│      * [cite_start]**Data Sources:** Use  │
+│  Public/Open data (Tier 1) or             │
+│  Proprietary data (Tier 3) to ensure      │
+│  unique value[cite: 501, 508].            │
+│      * [cite_start]**HTML Payloads:**     │
+│  Pre-assemble the HTML structure in a     │
+│  spreadsheet (CSV) before importing to    │
+│  bypass GHL limitations[cite: 526].       │
+│      * [cite_start]**Avoid Spam:**        │
+│  Ensure >30% uniqueness per page to       │
+│  satisfy Google's "Helpful Content"       │
+│  algorithms[cite: 593].                   │
+│                                           │
+│  ---                                      │
+│                                           │
+│  ## V. Website Optimization: The          │
+│  C.O.R.E. Framework                       │
+│  [cite_start]**Goal:** Align website      │
+│  design with neuroscience to maximize     │
+│  conversion[cite: 720].                   │
+│                                           │
+│  * **C - Cognitive Flow:** Minimize       │
+│  "Cognitive Load." [cite_start]Use        │
+│  familiar layouts (logo top-left) and     │
+│  chunk information to prevent decision    │
+│  paralysis[cite: 722, 739].               │
+│  * **O - Ocular Guidance:** Control       │
+│  where users look. [cite_start]Use        │
+│  visual hierarchy (size, contrast) to     │
+│  direct eyes to the CTA and avoid         │
+│  "Banner Blindness"[cite: 789, 804].      │
+│  * **R - Reward Pathways:** Gamify the    │
+│  experience. [cite_start]Use progress     │
+│  bars and "streaks" to trigger dopamine   │
+│  loops that encourage completion and      │
+│  return visits[cite: 837, 858].           │
+│  * **E - Emotional Resonance:** Build     │
+│  trust in milliseconds. [cite_start]Use   │
+│  consistent branding, storytelling, and   │
+│  human faces to create safety and         │
+│  lasting memory[cite: 884, 905].          │
+│                                           │
+│                                           │
+│                                           │
+│  ### [PASTE YOUR GEM CONTENT HERE]        │
+│                                           │
+│                                           │
+│                                           │
+│                                           │
+│  # Local Company Documents                │
+│                                           │
+│                                           │
+│  --- Document: company_brief.txt ---      │
+│  The company tagline is 'Mortgages Made   │
+│  Simple'. Founded in 2010.                │
+│                                           │
+│  Also check this URL if provided (but do  │
+│  not attempt to scrape gemini.google.com  │
+│  links directly):                         │
+│  https://gemini.google.com/gem/1d0EIXa3J  │
+│  zP1BisSOu9MdXSa9z9roKX3U?usp=sharing.    │
+│  If a valid external URL is provided,     │
+│  use the ScrapeWebsiteTool to read it to  │
+│  gather more context.                     │
+│                                           │
+│                                           │
+╰───────────────────────────────────────────╯
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    0a7cf8c9-3b34-4c53-8892-0c556f37f6a0)
+    Status: Executing Task...
+    ├── 🔧 Used Search the internet with 
+    │   Serper (1)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (2)
+    └── 🔧 Used Search the internet with 
+        Serper (3)╭───────── 🔧 Agent Tool Execution ─────────╮
+│                                           │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Thought: Okay, I need to research TJ     │
+│  Sam Mortgage's customer and competitors  │
+│  in the Denton, TX area. I'll start by    │
+│  searching the internet for information   │
+│  on the mortgage market in Denton, TX,    │
+│  and then look for competitors and        │
+│  customer demographics. I will leverage   │
+│  the gem knowledge base to guide my       │
+│  search and look for additional           │
+│  information. I will prioritize searches  │
+│  that highlight the unique selling        │
+│  points of TJ Sam Mortgage as a trusted   │
+│  educator and strategic partner.          │
+│                                           │
+│  Using Tool: Search the internet with     │
+│  Serper                                   │
+│                                           │
+╰───────────────────────────────────────────╯
+╭─────────────── Tool Input ────────────────╮
+│                                           │
+│  {                                        │
+│    "search_query": "mortgage market       │
+│  Denton TX 2025, competitors, customer    │
+│  demographics"                            │
+│  }                                        │
+│                                           │
+╰───────────────────────────────────────────╯
+╭─────────────── Tool Output ───────────────╮
+│                                           │
+│  {'searchParameters': {'q': 'mortgage     │
+│  market Denton TX 2025, competitors,      │
+│  customer demographics', 'type':          │
+│  'search', 'num': 10, 'engine':           │
+│  'google'}, 'organic': [{'title':         │
+│  "Commentary: Denton's housing market     │
+│  trends are part of the slow ...",        │
+│  'link':                                  │
+│  'https://dentonrc.com/opinion/commentar  │
+│  y-denton-s-housing-market-trends-are-pa  │
+│  rt-of-the-slow-process-of-normalization  │
+│  /article_3262bac3-15b2-4386-ba11-13d0e5  │
+│  2a9349.html', 'snippet': "Denton's       │
+│  housing market continues to normalize.   │
+│  This healing process has been            │
+│  challenging for many, but it's           │
+│  completely necessary.", 'position': 1},  │
+│  {'title': 'Denton County Housing Market  │
+│  Continues to Normalize', 'link':         │
+│  'https://aaronlayman.com/2025/08/denton  │
+│  -county-housing-market-continues-to-nor  │
+│  malize/', 'snippet': "The Denton County  │
+│  housing market is not collapsing. It's   │
+│  responding to a normalization of real    │
+│  market-based mortgage rates. Home Sales  │
+│  Rise in ...", 'position': 2}, {'title':  │
+│  '[PDF] STATE MORTGAGE MARKET PROFILES |  │
+│  Q2 2025', 'link':                        │
+│  'https://www.mba.org/docs/default-sourc  │
+│  e/research-and-forecasts/members-only-r  │
+│  esearch/state-mortgage-market-profiles2  │
+│  5a9f0fd-50c8-4e73-8109-d05e44588d93.pdf  │
+│  ?sfvrsn=29f42ad6_1', 'snippet': 'DATA    │
+│  AS OF SECOND QUARTER, 2025, UNLESS       │
+│  OTHERWISE NOTED. 27953. Texas. Texas.    │
+│  United States. Homeownership Rate. Q4    │
+│  2024. 63.2%. 65.7%. Q1 2025.',           │
+│  'position': 3}, {'title': 'Best Real     │
+│  Estate Markets in 2025 - WalletHub',     │
+│  'link':                                  │
+│  'https://wallethub.com/edu/best-real-es  │
+│  tate-markets/14889', 'snippet': 'To      │
+│  determine the best local real-estate     │
+│  markets in the US, WalletHub compared    │
+│  300 cities of varying sizes across 17    │
+│  key indicators of housing-market ...',   │
+│  'position': 4}, {'title': '[PDF]         │
+│  AFFORDABLE HOUSING NEEDS & MARKET VALUE  │
+│  ANALYSIS', 'link':                       │
+│  'https://www.discussdenton.com/11846/wi  │
+│  dgets/36533/documents/21967',            │
+│  'snippet': 'The share of families in     │
+│  poverty was 8.9%, which was higher than  │
+│  Denton County as a whole (5.06%) but     │
+│  less than the. Dallas MSA (9.48%) and    │
+│  the state (11.9%).', 'position': 5},     │
+│  {'title': 'Mortga...                     │
+│                                           │
+╰───────────────────────────────────────────╯
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    0a7cf8c9-3b34-4c53-8892-0c556f37f6a0)
+    Status: Executing Task...
+    ├── 🔧 Used Search the internet with 
+    │   Serper (1)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (2)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (3)
+    └── 🔧 Used Search the internet with 
+        Serper (4)╭───────── 🔧 Agent Tool Execution ─────────╮
+│                                           │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Thought: Thought: The search results     │
+│  provide a good overview of the Denton    │
+│  housing market in 2025. I will now use   │
+│  the search tool to gather information    │
+│  about direct competitors of TJ Sam       │
+│  Mortgage in the Denton area and focus    │
+│  on those that are also mortgage          │
+│  brokers. I will also look for            │
+│  information on the demographics of       │
+│  homebuyers in Denton, TX.                │
+│                                           │
+│  Using Tool: Search the internet with     │
+│  Serper                                   │
+│                                           │
+╰───────────────────────────────────────────╯
+╭─────────────── Tool Input ────────────────╮
+│                                           │
+│  {                                        │
+│    "search_query": "mortgage brokers      │
+│  Denton TX, homebuyer demographics        │
+│  Denton TX"                               │
+│  }                                        │
+│                                           │
+╰───────────────────────────────────────────╯
+╭─────────────── Tool Output ───────────────╮
+│                                           │
+│  {'searchParameters': {'q': 'mortgage     │
+│  brokers Denton TX, homebuyer             │
+│  demographics Denton TX', 'type':         │
+│  'search', 'num': 10, 'engine':           │
+│  'google'}, 'organic': [{'title':         │
+│  'Denton Housing Market Data - Post Oak   │
+│  Realty', 'link':                         │
+│  'https://www.postoakrealty.com/market-i  │
+│  nsights/denton', 'snippet': 'Our latest  │
+│  report on the Denton real estate         │
+│  market, providing insights on real       │
+│  estate transactions, including units     │
+│  sold, sale price vs. asking price and    │
+│  ...', 'position': 1}, {'title':          │
+│  'Denton, TX Real Estate Market Reports   │
+│  - MTX Realty', 'link':                   │
+│  'https://mtxdfwhomes.com/market-reports  │
+│  -denton-tx', 'snippet': 'Explore         │
+│  neighborhood-specific data, compare      │
+│  market trends, and gain a competitive    │
+│  edge with our up-to-date home sales      │
+│  report for Denton, Texas.', 'position':  │
+│  2}, {'title': 'North TX Housing          │
+│  Affordability Gets Crushed - Aaron       │
+│  Layman', 'link':                         │
+│  'https://aaronlayman.com/2024/11/north-  │
+│  tx-housing-affordability-gets-crushed/'  │
+│  , 'snippet': 'Denton County home sales   │
+│  jumped 10 percent from the previous      │
+│  year. Average home prices in Denton      │
+│  County rose 5.7 percent to $567,177.     │
+│  Pending ...', 'position': 3}, {'title':  │
+│  'Denton, TX Market Trends - Movoto',     │
+│  'link':                                  │
+│  'https://www.movoto.com/denton-tx/marke  │
+│  t-trends/', 'snippet': 'Denton, TX       │
+│  market trends. Median values in Denton   │
+│  are $385000 list price, 78 days on       │
+│  Movoto, 696 active Inventories and       │
+│  $190/Sqft.', 'position': 4}, {'title':   │
+│  'Homebuyers are tapping out with         │
+│  record-high payments, Denton ...',       │
+│  'link':                                  │
+│  'https://dentonrc.com/news/housing_and_  │
+│  real_estate/homebuyers-are-tapping-out-  │
+│  with-record-high-payments-denton-real-e  │
+│  state-broker-says/article_9daf1000-c01d  │
+│  -59f5-87de-bb6981e76ebc.html',           │
+│  'snippet': 'The combination of home      │
+│  price growth and 7% mortgage rates is    │
+│  proving to be too much for some          │
+│  prospective buyers.', 'position': 5},    │
+│  {'title': "Denton Exclusive Buyer's      │
+│  Agents. HelpUBuy America- Since 1995",   │
+│  'link':                                  │
+│  'https://www.helpubuyamerica.com/denton  │
+│  _buyers_agent/', 'snippet': "HelpUBuy    │
+│  America has been helping home buyers     │
+│  find and buy homes ...                   │
+│                                           │
+╰───────────────────────────────────────────╯
+
+
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    0a7cf8c9-3b34-4c53-8892-0c556f37f6a0)
+    Status: Executing Task...
+    ├── 🔧 Used Search the internet with 
+    │   Serper (1)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (2)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (3)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (4)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (5)
+    └── 🧠 Thinking...╭───────── 🔧 Agent Tool Execution ─────────╮
+│                                           │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Thought: Thought: The search results     │
+│  have provided information on             │
+│  demographics of Denton, TX.              │
+│  To gather information about              │
+│  competitors, I will need to refine my    │
+│  search again to explicitly find          │
+│  mortgage brokers in Denton, TX. I'll     │
+│  also try to identify some of the larger  │
+│  players in the DFW area, as they may     │
+│  also operate in Denton.                  │
+│                                           │
+│  Using Tool: Search the internet with     │
+│  Serper                                   │
+│                                           │
+╰───────────────────────────────────────────╯
+╭─────────────── Tool Input ────────────────╮
+│                                           │
+│  {                                        │
+│    "search_query": "list of mortgage      │
+│  brokers Denton TX"                       │
+│  }                                        │
+│                                           │
+╰───────────────────────────────────────────╯
+╭─────────────── Tool Output ───────────────╮
+│                                           │
+│  {'searchParameters': {'q': 'list of      │
+│  mortgage brokers Denton TX', 'type':     │
+│  'search', 'num': 10, 'engine':           │
+│  'google'}, 'organic': [{'title': 'TOP    │
+│  10 BEST Mortgage Brokers in Denton, TX   │
+│  - Updated 2025 - Yelp', 'link':          │
+│  'https://www.yelp.com/search?find_desc=  │
+│  Mortgage+Brokers&find_loc=Denton%2C+TX'  │
+│  , 'snippet': 'Top 10 Best Mortgage       │
+│  Brokers Near Denton, Texas · 1. The      │
+│  Raskin Team - PrimeLending · 2. Lamron   │
+│  Financial Group · 3. Affiliated          │
+│  Mortgage Lending · 4. Loans with Wes     │
+│  ...', 'position': 1}, {'title':          │
+│  'Denton, TX Mortgage Lenders & Reviews   │
+│  - Zillow', 'link':                       │
+│  'https://www.zillow.com/lender-director  │
+│  y/tx/denton/', 'snippet': 'Search for    │
+│  Denton, TX mortgage lenders and read     │
+│  thousands of customer reviews on the     │
+│  largest online directory of licensed     │
+│  lenders.', 'position': 2}, {'title':     │
+│  'BBB Accredited Mortgage Broker near     │
+│  Denton, TX', 'link':                     │
+│  'https://www.bbb.org/us/tx/denton/categ  │
+│  ory/mortgage-broker/accredited',         │
+│  'snippet': 'Showing: 143 results for     │
+│  Mortgage Broker near Denton, TX ;        │
+│  Southwest Funding, LP. Mortgage          │
+│  Lenders, Mortgage Broker, Escrow         │
+│  Services ... · (214) 221-5215 ; Ciera    │
+│  ...', 'position': 3}, {'title': 'List    │
+│  of all Mortgage Brokers in Denton, TX -  │
+│  D7 Lead Finder', 'link':                 │
+│  'https://d7leadfinder.com/app/view-lead  │
+│  s/44743948/', 'snippet': 'Find Mortgage  │
+│  Brokers leads in Denton and surrounding  │
+│  areas, including contact information,    │
+│  business websites and social media       │
+│  profiles for all Mortgage ...',          │
+│  'position': 4}, {'title': "2025's Best   │
+│  Mortgage Brokers in Denton, TX -         │
+│  WalletHub", 'link':                      │
+│  'https://wallethub.com/mortgage-brokers  │
+│  /denton-tx', 'snippet': "WalletHub       │
+│  selected 2025's best mortgage brokers    │
+│  in Denton, TX based on user reviews.     │
+│  Compare and find the best mortgage       │
+│  broker of 2025.", 'position': 5},        │
+│  {'title': 'Realtor and mortgage broker   │
+│  recommendations in Denton County?',      │
+│  'link':                                  │
+│  'https://www.facebook.com/groups/971865  │
+│  684050393/posts/1534041381166151/',      │
+│  'snippet': 'DATCU is great for a         │
+│  mortgage lender, they offer great rates  │
+│  and Kinsey and Dustin are the loan       │
+│  offic...                                 │
+│                                           │
+╰───────────────────────────────────────────╯
+
+
+[91mReceived None or empty response from LLM call.[0m
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: Invalid response from LLM call - None or empty.[0m
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: Invalid response from LLM call - None or empty.[0m
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    0a7cf8c9-3b34-4c53-8892-0c556f37f6a0)
+    Status: Executing Task...
+    ├── 🔧 Used Search the internet with 
+    │   Serper (1)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (2)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (3)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (4)
+    └── 🔧 Used Search the internet with 
+        Serper (5)╭──────────── 🤖 Agent Started ─────────────╮
+│                                           │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Task: Conduct a thorough research about  │
+│  the customer and competitors in the      │
+│  context of tjsammtg.co/. Make sure you   │
+│  find any interesting and relevant        │
+│  information given the current year is    │
+│  2025. We are working with them on the    │
+│  following project: Getting a mortgage    │
+│  can seem overwhelming; let us simplify   │
+│  it for you so you can get on with your   │
+│  own life.                                │
+│                                           │
+│                                           │
+│  Customer Domain: Mortgage Broker in the  │
+│  Denton TX Area                           │
+│  Project Overview: Creating a             │
+│  comprehensive marketing campaign to      │
+│  boost awareness and adoption of TJ Sam   │
+│  Mortgage's services among homebuyers,    │
+│  people looking to refiniance, and        │
+│  realitors who could use TJ Sam           │
+│  Mortgage's expertise to help them sell   │
+│  houses. The marketing campaign should    │
+│  include Lead Magnets and  Advertorials   │
+│  as well as social media posts            │
+│  .                                        │
+│  Check for additional context or Gem      │
+│  info in the following content: # Gem     │
+│  Knowledge Base                           │
+│                                           │
+│                                           │
+│                                           │
+│  ***                                      │
+│                                           │
+│  # The TJ Sam Mortgage Master Blueprint:  │
+│  2025 Strategy                            │
+│  **Mission:** Transition from "Loan       │
+│  Originator" to "Trusted Educator" and    │
+│  Strategic Partner.                       │
+│                                           │
+│  ---                                      │
+│                                           │
+│  ## I. Market Context & Core Philosophy   │
+│  [cite_start]The Texas housing market     │
+│  has shifted from the frantic "speed"     │
+│  market of the past to a "buyer's         │
+│  market" defined by affordability         │
+│  anxiety and choice[cite: 4, 11, 13].     │
+│  * [cite_start]**The Problem:** Buyers    │
+│  are no longer driven by FOMO (Fear Of    │
+│  Missing Out) but by FOOP (Fear Of        │
+│  Overpaying)[cite: 21].                   │
+│  * **The Solution:** You must stop        │
+│  competing on rate and speed.             │
+│  [cite_start]You must compete on          │
+│  **Certainty, Education, and Niche        │
+│  Problem-Solving**[cite: 22, 35].         │
+│  * [cite_start]**The Identity:** You are  │
+│  not a bank selling a product; you are a  │
+│  Broker selling expertise and             │
+│  choice[cite: 37].                        │
+│                                           │
+│  ---                                      │
+│                                           │
+│  ## II. The 4-Channel Advertising         │
+│  Portfolio                                │
+│  [cite_start]To build a resilient         │
+│  business, we utilize four distinct       │
+│  channels, each with a specific           │
+│  goal[cite: 40, 141].                     │
+│                                           │
+│  ### 1. THE ENGINE: B2B Referral          │
+│  Partnerships (LinkedIn)                  │
+│  [cite_start]**Goal:** Systematize        │
+│  high-quality referrals from agents,      │
+│  CPAs, and advisors[cite: 43].            │
+│  * **Strategy:** Shift from asking for    │
+│  business to offering value.              │
+│  [cite_start]Position yourself as a       │
+│  strategic partner who helps agents       │
+│  close difficult deals[cite: 60, 200].    │
+│  * **Key Tactics:**                       │
+│      * [cite_start]**The "Deal            │
+│  Autopsy":** Post stories on LinkedIn     │
+│  about saving deals other lenders denied  │
+│  (e.g., Self-Employed or Appraisal        │
+│  Gaps)[cite: 202, 206].                   │
+│      * [cite_start]**The Agent            │
+│  Webinar:** Host educational sessions     │
+│  (e.g., "How to Win VA Offers") to teach  │
+│  agents how to sell more[cite: 220,       │
+│  224].                                    │
+│      * [cite_start]**Co-Branded           │
+│  Assets:** Provide white-label guides     │
+│  (e.g., "Renovation Cheat Sheet") that    │
+│  agents can give to their clients[cite:   │
+│  237, 246].                               │
+│                                           │
+│  ### 2. THE ASSET: Organic Search (SEO)   │
+│  [cite_start]**Goal:** Build an owned     │
+│  audience of high-intent researchers to   │
+│  reduce reliance on paid leads[cite: 44,  │
+│  74].                                     │
+│  * [cite_start]**Strategy:** Create       │
+│  content for the "Research Phase" (Top    │
+│  of Funnel) and "Buying Phase" (Bottom    │
+│  of Funnel)[cite: 86].                    │
+│  * **Key Tactics:**                       │
+│      * [cite_start]**Ultimate Guides:**   │
+│  Long-form blog posts answering specific  │
+│  questions (e.g., "Texas Down Payment     │
+│  Assistance Guide")[cite: 263].           │
+│      * [cite_start]**Hyper-Local Service  │
+│  Pages:** Static pages targeting          │
+│  specific locations (e.g., "Mortgage      │
+│  Broker in Frisco")[cite: 293].           │
+│      * [cite_start]**Google Business      │
+│  Profile:** Optimize for local SEO by     │
+│  seeding Q&A sections and getting         │
+│  keyword-rich reviews[cite: 297, 301].    │
+│                                           │
+│  ### 3. THE HUNT: High-Intent Paid        │
+│  Search (Google Ads)                      │
+│  [cite_start]**Goal:** Capture active     │
+│  demand from borrowers with specific      │
+│  problems[cite: 46, 318].                 │
+│  * **Strategy:** Avoid broad keywords     │
+│  like "Mortgage Rates."                   │
+│  [cite_start]Target niche demographics    │
+│  and specific pain points[cite: 317].     │
+│  * **Key Tactics:**                       │
+│      * [cite_start]**Niche                │
+│  Demographics:** Target unique            │
+│  professions (e.g., "Physician Loans in   │
+│  Houston")[cite: 324].                    │
+│      * [cite_start]**Problem-Solution:**  │
+│  Target "Cash-Out for Renovation" or      │
+│  "Divorce Buyout" keywords[cite: 351,     │
+│  356].                                    │
+│      * [cite_start]**Hyper-Local          │
+│  Authority:** Target "Best Mortgage       │
+│  Broker in Austin" using negative         │
+│  keywords to filter out career            │
+│  seekers[cite: 365, 378].                 │
+│                                           │
+│  ### 4. THE FARM: Low-Cost Demand         │
+│  Creation (Meta/Social)                   │
+│  [cite_start]**Goal:** Generate low-cost  │
+│  leads ($4-$16) and nurture them over     │
+│  6-12 months[cite: 48, 115].              │
+│  * **Strategy:** Never advertise "Free    │
+│  Quote." [cite_start]Use "Lead Magnets"   │
+│  to capture contact info and enter them   │
+│  into an automated nurture                │
+│  sequence[cite: 123, 387].                │
+│  * **Key Tactics:**                       │
+│      * [cite_start]**Lead Magnets:**      │
+│  Offer downloadable PDFs (e.g., "The      │
+│  2025 Texas FTHB Guide")[cite: 394].      │
+│      * [cite_start]**Life Events:**       │
+│  Target users who are "Newly Engaged" or  │
+│  "Recently Moved"[cite: 409, 419].        │
+│      * [cite_start]**Database             │
+│  Reactivation:** Upload past client       │
+│  lists for "Mortgage Check-Up"            │
+│  retargeting ads[cite: 424].              │
+│                                           │
+│  ---                                      │
+│                                           │
+│  ## III. The Realtor "Co-Pilot" Growth    │
+│  Strategy (Denton Focus)                  │
+│  [cite_start]**Goal:** Establish 5 new,   │
+│  active Realtor partnerships in Denton    │
+│  within year one[cite: 1149].             │
+│  **Differentiation:** Unlike competitors  │
+│  (The Wood Group, Service First), we      │
+│  avoid cookie-cutter marketing.           │
+│  [cite_start]We act as a business growth  │
+│  engine for agents[cite: 1135, 1162].     │
+│                                           │
+│  * [cite_start]**Pillar 1: Proactive      │
+│  Value:** Provide the "Realtor            │
+│  Partnership Playbook" (co-marketing      │
+│  blueprints) and exclusive market         │
+│  insights[cite: 1176, 1210].              │
+│  * [cite_start]**Pillar 2: Flawless       │
+│  Execution:** Guarantee communication     │
+│  and speed to protect the agent's         │
+│  reputation[cite: 1184].                  │
+│  * [cite_start]**Pillar 3: Shared         │
+│  Growth:** Execute "Lunch & Learn"        │
+│  events (e.g., leveraging VA loans) to    │
+│  facilitate face-to-face                  │
+│  networking[cite: 1221].                  │
+│  * [cite_start]**Proof:** Use case        │
+│  studies/advertorials (e.g., "How a       │
+│  Proactive Lender Saved a Deal in 21      │
+│  Days") to prove value[cite: 1245].       │
+│                                           │
+│  ---                                      │
+│                                           │
+│  ## IV. Technical Execution:              │
+│  Programmatic SEO (GoHighLevel)           │
+│  [cite_start]**Goal:** Scale content      │
+│  production from manual ("Artisanal") to  │
+│  automated ("Industrial") to capture      │
+│  long-tail search traffic[cite: 450,      │
+│  455].                                    │
+│  [cite_start]**The Equation:** Total      │
+│  Pages = (Head Term + Modifiers) × Data   │
+│  Availability[cite: 474].                 │
+│                                           │
+│  * [cite_start]**The Method:** Use        │
+│  GoHighLevel's Blog Engine (not the       │
+│  website builder) to handle volume[cite:  │
+│  520].                                    │
+│  * **The Construction:**                  │
+│      * [cite_start]**Data Sources:** Use  │
+│  Public/Open data (Tier 1) or             │
+│  Proprietary data (Tier 3) to ensure      │
+│  unique value[cite: 501, 508].            │
+│      * [cite_start]**HTML Payloads:**     │
+│  Pre-assemble the HTML structure in a     │
+│  spreadsheet (CSV) before importing to    │
+│  bypass GHL limitations[cite: 526].       │
+│      * [cite_start]**Avoid Spam:**        │
+│  Ensure >30% uniqueness per page to       │
+│  satisfy Google's "Helpful Content"       │
+│  algorithms[cite: 593].                   │
+│                                           │
+│  ---                                      │
+│                                           │
+│  ## V. Website Optimization: The          │
+│  C.O.R.E. Framework                       │
+│  [cite_start]**Goal:** Align website      │
+│  design with neuroscience to maximize     │
+│  conversion[cite: 720].                   │
+│                                           │
+│  * **C - Cognitive Flow:** Minimize       │
+│  "Cognitive Load." [cite_start]Use        │
+│  familiar layouts (logo top-left) and     │
+│  chunk information to prevent decision    │
+│  paralysis[cite: 722, 739].               │
+│  * **O - Ocular Guidance:** Control       │
+│  where users look. [cite_start]Use        │
+│  visual hierarchy (size, contrast) to     │
+│  direct eyes to the CTA and avoid         │
+│  "Banner Blindness"[cite: 789, 804].      │
+│  * **R - Reward Pathways:** Gamify the    │
+│  experience. [cite_start]Use progress     │
+│  bars and "streaks" to trigger dopamine   │
+│  loops that encourage completion and      │
+│  return visits[cite: 837, 858].           │
+│  * **E - Emotional Resonance:** Build     │
+│  trust in milliseconds. [cite_start]Use   │
+│  consistent branding, storytelling, and   │
+│  human faces to create safety and         │
+│  lasting memory[cite: 884, 905].          │
+│                                           │
+│                                           │
+│                                           │
+│  ### [PASTE YOUR GEM CONTENT HERE]        │
+│                                           │
+│                                           │
+│                                           │
+│                                           │
+│  # Local Company Documents                │
+│                                           │
+│                                           │
+│  --- Document: company_brief.txt ---      │
+│  The company tagline is 'Mortgages Made   │
+│  Simple'. Founded in 2010.                │
+│                                           │
+│  Also check this URL if provided (but do  │
+│  not attempt to scrape gemini.google.com  │
+│  links directly):                         │
+│  https://gemini.google.com/gem/1d0EIXa3J  │
+│  zP1BisSOu9MdXSa9z9roKX3U?usp=sharing.    │
+│  If a valid external URL is provided,     │
+│  use the ScrapeWebsiteTool to read it to  │
+│  gather more context.                     │
+│                                           │
+│                                           │
+╰───────────────────────────────────────────╯
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    0a7cf8c9-3b34-4c53-8892-0c556f37f6a0)
+    Status: Executing Task...
+    ├── 🔧 Used Search the internet with 
+    │   Serper (1)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (2)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (3)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (4)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (5)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (6)
+    └── 🧠 Thinking...
+╭───────── 🔧 Agent Tool Execution ─────────╮
+│                                           │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Thought: Okay, I understand the task. I  │
+│  need to conduct thorough research on TJ  │
+│  Sam Mortgage, their customers, and       │
+│  competitors in the Denton, TX area,      │
+│  keeping in mind the 2025 market          │
+│  conditions. I will focus on information  │
+│  relevant to the provided blueprint,      │
+│  including target demographics,           │
+│  preferences, market positioning, and     │
+│  audience engagement strategies. I'll     │
+│  start by searching for information       │
+│  about the mortgage market in Denton,     │
+│  TX, and then look at the competition.    │
+│                                           │
+│  Using Tool: Search the internet with     │
+│  Serper                                   │
+│                                           │
+╰───────────────────────────────────────────╯
+╭─────────────── Tool Input ────────────────╮
+│                                           │
+│  {                                        │
+│    "search_query": "mortgage market       │
+│  Denton TX 2025"                          │
+│  }                                        │
+│                                           │
+╰───────────────────────────────────────────╯
+╭─────────────── Tool Output ───────────────╮
+│                                           │
+│  {'searchParameters': {'q': 'mortgage     │
+│  market Denton TX 2025', 'type':          │
+│  'search', 'num': 10, 'engine':           │
+│  'google'}, 'organic': [{'title':         │
+│  'Denton, TX Housing Market: 2025 Home    │
+│  Prices & Trends | Zillow', 'link':       │
+│  'https://www.zillow.com/home-values/435  │
+│  1/denton-tx/', 'snippet': 'The average   │
+│  home value in Denton, TX is $350332,     │
+│  down 4.4% over the past year. Learn      │
+│  more about the Denton housing market     │
+│  and real estate trends.', 'position':    │
+│  1}, {'title': 'Denton, TX 2025 Housing   │
+│  Market | realtor.com®', 'link':          │
+│  'https://www.realtor.com/realestateandh  │
+│  omes-search/Denton_TX/overview',         │
+│  'snippet': 'The median listing home      │
+│  price in Denton, TX was $389.9K in       │
+│  September 2025, trending down -4.9%      │
+│  year-over-year. The median listing home  │
+│  price per square foot was ...',          │
+│  'position': 2}, {'title': "Some young    │
+│  North Texans fear they'll never own a    │
+│  home. Is Trump's ...", 'link':           │
+│  'https://dentonrc.com/news/state/some-y  │
+│  oung-north-texans-fear-they-ll-never-ow  │
+│  n-a-home-is-trumps-50-year/article_1edb  │
+│  73c1-ef9b-4734-9bf2-a599aac0bdb7.html',  │
+│   'snippet': 'Adults under 30 made up     │
+│  only 10% of Texas homebuyers in 2023,    │
+│  and local trends show why so few are     │
+│  managing to buy.', 'position': 3},       │
+│  {'title': 'Denton Housing Market: House  │
+│  Prices & Trends - Redfin', 'link':       │
+│  'https://www.redfin.com/city/5145/TX/De  │
+│  nton/housing-market', 'snippet': 'In     │
+│  October 2025, Denton home prices were    │
+│  down 6.3% compared to last year,         │
+│  selling for a median price of $375K. On  │
+│  average, homes in Denton sell after 95   │
+│  days on ...', 'position': 4,             │
+│  'sitelinks': [{'title': 'Trends',        │
+│  'link':                                  │
+│  'https://www.redfin.com/city/5145/TX/De  │
+│  nton/housing-market#trends'}, {'title':  │
+│  'Demand', 'link':                        │
+│  'https://www.redfin.com/city/5145/TX/De  │
+│  nton/housing-market#demand'}, {'title':  │
+│  'Schools', 'link':                       │
+│  'https://www.redfin.com/city/5145/TX/De  │
+│  nton/housing-market#schools'}]},         │
+│  {'title': 'Denton County Housing Market  │
+│  Update | August 2025 Trends', 'link':    │
+│  'https://andrewclark.postoakrealty.com/  │
+│  posts/denton-county-housing-market-upda  │
+│  te-august-2025', 'snippet': 'The         │
+│  media...                                 │
+│                                           │
+╰───────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    0a7cf8c9-3b34-4c53-8892-0c556f37f6a0)
+    Status: Executing Task...
+    ├── 🔧 Used Search the internet with 
+    │   Serper (1)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (2)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (3)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (4)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (5)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (6)
+    └── 🔧 Used Search the internet with 
+        Serper (7)╭───────── 🔧 Agent Tool Execution ─────────╮
+│                                           │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Thought: Thought: The search results     │
+│  indicate a mixed outlook for the         │
+│  Denton, TX housing market in 2025.       │
+│  While some sources suggest a potential   │
+│  rebound, others highlight declining      │
+│  home prices and affordability concerns.  │
+│  Several sources point to increasing      │
+│  inventory. It seems like it's becoming   │
+│  more of a buyer's market, which aligns   │
+│  with the "Master Blueprint" document.    │
+│  I'll investigate some of the top         │
+│  competitors mentioned in the document    │
+│  and other highly ranked competitors.     │
+│                                           │
+│  Using Tool: Search the internet with     │
+│  Serper                                   │
+│                                           │
+╰───────────────────────────────────────────╯
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    0a7cf8c9-3b34-4c53-8892-0c556f37f6a0)
+    Status: Executing Task...
+    ├── 🔧 Used Search the internet with 
+    │   Serper (1)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (2)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (3)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (4)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (5)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (6)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (7)
+    └── 🧠 Thinking...╭─────────────── Tool Input ────────────────╮
+│                                           │
+│  {                                        │
+│    "search_query": "mortgage brokers      │
+│  Denton TX competitors"                   │
+│  }                                        │
+│                                           │
+╰───────────────────────────────────────────╯
+╭─────────────── Tool Output ───────────────╮
+│                                           │
+│  {'searchParameters': {'q': 'mortgage     │
+│  brokers Denton TX competitors', 'type':  │
+│  'search', 'num': 10, 'engine':           │
+│  'google'}, 'organic': [{'title': 'TOP    │
+│  10 BEST Mortgage Brokers in Denton, TX   │
+│  - Updated 2025 - Yelp', 'link':          │
+│  'https://www.yelp.com/search?find_desc=  │
+│  Mortgage+Brokers&find_loc=Denton%2C+TX'  │
+│  , 'snippet': 'Top 10 Best Mortgage       │
+│  Brokers Near Denton, Texas · 1. The      │
+│  Raskin Team - PrimeLending · 2. Lamron   │
+│  Financial Group · 3. Affiliated          │
+│  Mortgage Lending · 4. Loans with Wes     │
+│  ...', 'position': 1}, {'title': "2025's  │
+│  Best Mortgage Brokers in Denton, TX -    │
+│  WalletHub", 'link':                      │
+│  'https://wallethub.com/mortgage-brokers  │
+│  /denton-tx', 'snippet': "WalletHub       │
+│  selected 2025's best mortgage brokers    │
+│  in Denton, TX based on user reviews.     │
+│  Compare and find the best mortgage       │
+│  broker of 2025.", 'position': 2},        │
+│  {'title': 'Mortgage Broker near Denton,  │
+│  TX | Better Business Bureau', 'link':    │
+│  'https://www.bbb.org/us/tx/denton/categ  │
+│  ory/mortgage-broker', 'snippet': 'BBB    │
+│  Directory of Mortgage Broker near        │
+│  Denton, TX. Your guide to trusted BBB    │
+│  Ratings, customer reviews and BBB        │
+│  Accredited businesses.', 'position':     │
+│  3}, {'title': 'Denton, TX Home Loans -   │
+│  Lone Star Financing', 'link':            │
+│  'https://lonestarfinancing.com/denton/'  │
+│  , 'snippet': 'Lone Star Financing, a     │
+│  direct lender in Denton, offers          │
+│  tailored mortgage solutions with         │
+│  competitive rates and top-notch          │
+│  service.', 'position': 4}, {'title':     │
+│  "Who's everyone's favorite realtors &    │
+│  mortgage lenders in the area?", 'link':  │
+│  'https://www.facebook.com/groups/767437  │
+│  136786204/posts/2558690000994233/',      │
+│  'snippet': 'Kerr Property Group -        │
+│  Keller Williams Realty. And.. Christina  │
+│  Maquet with Christina Maquet             │
+│  Group-Lender. They are the dynamic duo   │
+│  when it comes ...', 'position': 5,       │
+│  'sitelinks': [{'title': 'Realtor and     │
+│  mortgage broker recommendations in       │
+│  Denton County?', 'link':                 │
+│  'https://www.facebook.com/groups/971865  │
+│  684050393/posts/1534041381166151/'},     │
+│  {'title': 'Hi all, Please suggest some   │
+│  good lenders for mortgage shopping No    │
+│  ...', 'link':                            │
+│  'https://www.facebook.com/groups/498...  │
+│                                           │
+╰───────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    0a7cf8c9-3b34-4c53-8892-0c556f37f6a0)
+    Status: Executing Task...
+    ├── 🔧 Used Search the internet with 
+    │   Serper (1)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (2)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (3)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (4)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (5)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (6)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (7)
+    └── 🔧 Used Read website content (1)╭───────── 🔧 Agent Tool Execution ─────────╮
+│                                           │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Thought: Thought: The Yelp and           │
+│  WalletHub results seem promising for     │
+│  identifying local competitors. I'll      │
+│  check out the Yelp page.                 │
+│                                           │
+│  Using Tool: Read website content         │
+│                                           │
+╰───────────────────────────────────────────╯
+╭─────────────── Tool Input ────────────────╮
+│                                           │
+│  {                                        │
+│    "website_url":                         │
+│  "https://www.yelp.com/search?find_desc=  │
+│  Mortgage+Brokers&find_loc=Denton%2C+TX"  │
+│  }                                        │
+│                                           │
+╰───────────────────────────────────────────╯
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    0a7cf8c9-3b34-4c53-8892-0c556f37f6a0)
+    Status: Executing Task...
+    ├── 🔧 Used Search the internet with 
+    │   Serper (1)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (2)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (3)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (4)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (5)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (6)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (7)
+    ├── 🔧 Used Read website content (1)
+    └── 🧠 Thinking...╭─────────────── Tool Output ───────────────╮
+│                                           │
+│  The following text is scraped website    │
+│  content:                                 │
+│                                           │
+│  yelp.com Please enable JS and disable    │
+│  any ad blocker                           │
+│                                           │
+╰───────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    0a7cf8c9-3b34-4c53-8892-0c556f37f6a0)
+    Status: Executing Task...
+    ├── 🔧 Used Search the internet with 
+    │   Serper (1)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (2)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (3)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (4)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (5)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (6)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (7)
+    ├── 🔧 Used Read website content (1)
+    ├── 🔧 Used Read website content (2)
+    └── 🧠 Thinking...
+╭───────── 🔧 Agent Tool Execution ─────────╮
+│                                           │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Thought: Thought: The Yelp scrape        │
+│  didn't work. Let me try a different      │
+│  competitor result.                       │
+│                                           │
+│  Using Tool: Read website content         │
+│                                           │
+╰───────────────────────────────────────────╯
+╭─────────────── Tool Input ────────────────╮
+│                                           │
+│  {                                        │
+│    "website_url":                         │
+│  "https://wallethub.com/mortgage-brokers  │
+│  /denton-tx"                              │
+│  }                                        │
+│                                           │
+╰───────────────────────────────────────────╯
+╭─────────────── Tool Output ───────────────╮
+│                                           │
+│  The following text is scraped website    │
+│  content:                                 │
+│                                           │
+│  2025's Best Mortgage Brokers in Denton,  │
+│  TX WalletHub Search MyHub Credit Cards   │
+│  Compare Cards Editors' Best              │
+│  CardAdvisor™ Payoff Calculator Loans     │
+│  Car Loans Home Equity Loans Mortgages    │
+│  Personal Loans Banking CD Rates          │
+│  Checking Accounts Savings Accounts       │
+│  Money Market Accounts Prepaid Cards      │
+│  Best Banks Best Credit Unions Banking    │
+│  CD Rates Checking Accounts Savings       │
+│  Accounts Money Market Accounts Prepaid   │
+│  Cards Best Banks Best Credit Unions      │
+│  Pros Pros Financial Advisors Insurance   │
+│  Agents Real Estate Agents Mortgage       │
+│  Brokers Login Sign Up Back Search Login  │
+│  Sign Up for Free FIND THE BEST Bank      │
+│  Accounts Credit Cards Personal Loans     │
+│  Car Loans Insurance Professionals Tools  │
+│  Answers Calculators Articles & Studies   │
+│  MYHUB Dashboard Credit Report Credit     │
+│  Monitoring Credit Analysis Score         │
+│  Simulator Spending Budget Transactions   │
+│  Debt Payoff Credit Builder Net Worth     │
+│  Portfolio Investment Dashboard           │
+│  Investment Activities WalletScore        │
+│  Identity Protection Help FAQ Feedback    │
+│  Add Your Business Accessibility Other    │
+│  Invite Friends Legal Terms Privacy Your  │
+│  Privacy Choices California Collection    │
+│  Notice Cookie Policy Content Guidelines  │
+│  Back All Personal Loans Best Personal    │
+│  Loans Type Credit Card Consolidation     │
+│  Debt Consolidation Dental Joint          │
+│  Applications Medical Quick Vacation      │
+│  Wedding Credit Level Excellent Credit    │
+│  Good Credit Fair Credit Bad Credit       │
+│  Editor's Best Best Personal Loans Debt   │
+│  Consolidation Debt Consolidation for     │
+│  Bad Credit Emergency Home Improvement    │
+│  Loans Installment Loans Installment      │
+│  Loans for Bad Credit Loans for Students  │
+│  Loans for Veterans Loans for Cosigner    │
+│  No Credit No Credit Check Online Loans   │
+│  Short-Term Small Personal Loans Reviews  │
+│  LendingClub LendingPoint LightStream     │
+│  OneMain Financial Oportun OppLoans       │
+│  Prosper SoFi Loans Upgrade Upstart Back  │
+│  All Credit Cards Best Credit Cards       │
+│  Credit Card Deals Rates 0% APR Cards     │
+│  Balance Transfer Cards Best Credit Card  │
+│  Rates Low Interest Cards Rewards         │
+│  Airline Credit Cards Cash Back Cards     │
+│  Gas Credit Cards Hotel Credi...          │
+│                                           │
+╰───────────────────────────────────────────╯
+
+[91mReceived None or empty response from LLM call.[0m
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: Invalid response from LLM call - None or empty.[0m
+[91mAn unknown error occurred. Please check the details below.[0m
+[91mError details: Invalid response from LLM call - None or empty.[0m
+An error occurred: Invalid response from LLM call - None or empty.
+
+Generating Master Report...
+🚀 Crew: crew
+└── 📋 Task: research_task (ID: 
+    0a7cf8c9-3b34-4c53-8892-0c556f37f6a0)
+    Assigned to: Lead Market Analyst
+    
+    Status: ❌ Failed
+    ├── 🔧 Used Search the internet with 
+    │   Serper (1)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (2)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (3)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (4)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (5)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (6)
+    ├── 🔧 Used Search the internet with 
+    │   Serper (7)
+    ├── 🔧 Used Read website content (1)
+    └── 🔧 Used Read website content (2)╭────────────── Task Failure ───────────────╮
+│                                           │
+│  Task Failed                              │
+│  Name: research_task                      │
+│  Agent: Lead Market Analyst               │
+│                                           │
+│  Tool Args:                               │
+│                                           │
+│                                           │
+╰───────────────────────────────────────────╯
+
+╭────────────── Crew Failure ───────────────╮
+│                                           │
+│  Crew Execution Failed                    │
+│  Name: crew                               │
+│  ID:                                      │
+│  acea7028-8c24-4710-8530-b01b0e1cde6e     │
+│  Tool Args:                               │
+│  Final Output:                            │
+│                                           │
+│                                           │
+╰───────────────────────────────────────────╯
+
+
+[Master Report] Generated at: Reports/20251209_115524_tjsammtg/master-report.md
+╭───────────── Tracing Status ──────────────╮
+│                                           │
+│  Info: Tracing is disabled.               │
+│                                           │
+│  To enable tracing, do any one of these:  │
+│  • Set tracing=True in your Crew/Flow     │
+│  code                                     │
+│  • Set CREWAI_TRACING_ENABLED=true in     │
+│  your project's .env file                 │
+│  • Run: crewai traces enable              │
+│                                           │
+╰───────────────────────────────────────────╯
