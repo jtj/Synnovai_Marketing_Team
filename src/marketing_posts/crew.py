@@ -41,6 +41,16 @@ class CopyList(BaseModel):
 	"""List of copies"""
 	copies: List[Copy] = Field(..., description="List of marketing copies")
 
+class Advertorial(BaseModel):
+	"""Advertorial model"""
+	headline: str = Field(..., description="Catchy headline for the advertorial")
+	body: str = Field(..., description="Main body content of the advertorial")
+	call_to_action: str = Field(..., description="Call to action statement")
+
+class AdvertorialList(BaseModel):
+	"""List of advertorials"""
+	advertorials: List[Advertorial] = Field(..., description="List of advertorials")
+
 @CrewBase
 class MarketingPostsCrew():
 	"""MarketingPosts crew"""
@@ -76,6 +86,16 @@ class MarketingPostsCrew():
 		return Agent(
 			config=self.agents_config['chief_marketing_strategist'],
 			tools=[SerperDevTool(), ScrapeWebsiteTool()],
+			verbose=True,
+			memory=False,
+			llm=self.llm,
+			function_calling_llm=self.llm
+		)
+
+	@agent
+	def advertorial_writer(self) -> Agent:
+		return Agent(
+			config=self.agents_config['advertorial_writer'],
 			verbose=True,
 			memory=False,
 			llm=self.llm,
@@ -134,6 +154,16 @@ class MarketingPostsCrew():
    		context=[self.marketing_strategy_task(), self.campaign_idea_task()],
 			output_json=CopyList,
 			output_file=os.path.join(self.folder_path, "creative_creator_copy_creation.md")
+		)
+
+	@task
+	def advertorial_creation_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['advertorial_creation_task'],
+			agent=self.advertorial_writer(),
+			context=[self.campaign_idea_task(), self.project_understanding_task()],
+			output_json=AdvertorialList,
+			output_file=os.path.join(self.folder_path, "advertorial_writer_advertorial_creation.md")
 		)
 
 	@crew

@@ -4,6 +4,10 @@ This project leverages the **CrewAI** framework and **Google Gemini** models to 
 
 ## Features
 
+*   **Strategic Marketing**: Develops comprehensive marketing strategies with tactics, channels, and KPIs.
+*   **Advertorial Writing**: specialized agent for crafting high-conversion, long-form advertorial articles.
+*   **Campaign Ideas**: Generates innovative campaign concepts.
+*   **Copy Creation**: writes compelling marketing copy for approved campaigns.
 - **Google Gemini Integration**: Uses `gemini-pro-latest` by default, with support for all Gemini models (Flash, Pro, Exp, etc.).
 - **Dynamic Inputs**: Accepts company information via easy-to-edit YAML files.
 - **Robust Output Management**:

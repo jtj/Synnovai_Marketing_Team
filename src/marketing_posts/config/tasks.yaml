@@ -50,3 +50,12 @@ copy_creation_task:
   expected_output: >
     Marketing copies for each campaign idea.
 
+advertorial_creation_task:
+  description: >
+    Write a long-form advertorial for {project_description}.
+    Select the most suitable campaign idea from the list and expand it into an educational article
+    that subtly sells the {customer_domain} product/service.
+    Structure: catchy headline, problem agitation (storytelling), educational value, solution introduction, and call to action.
+  expected_output: >
+    A list of advertorials, each with a headline, body content, and call to action.
+
