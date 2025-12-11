@@ -69,7 +69,7 @@ Use the `--model` flag to experiment with different Gemini versions (e.g., faste
     *   Edit the `companies/tjsammtg.yaml` file (or create your own in the `companies/` directory) with the customer's domain, project description, and company name.
 
 2.  **Ensure Context (Optional but Recommended)**:
-    *   Create a folder matching your company name (e.g., `TJ Sam Mortgage/`).
+    *   Create a folder matching your company name inside `Knowledgebases/` (e.g., `Knowledgebases/TJ Sam Mortgage/`).
     *   Add PDF or text documents to it.
 
 3.  **Run the script**:
@@ -95,9 +95,9 @@ Use the `--model` flag to experiment with different Gemini versions (e.g., faste
 Enrich the agents' context with your own data by using the **Company Folder** feature:
 
 **Company Folder (Documents)**:
-Create a folder named exactly after your company (matching the `name` field in your YAML file, e.g., `TJ Sam Mortgage`).
+Create a folder inside `Knowledgebases/` named exactly after your company (matching the `name` field in your YAML file, e.g., `Knowledgebases/TJ Sam Mortgage`).
 Drop any supported documents into this folder.
-*   **Supported Formats**: `.pdf`, `.txt`, `.md`, `.yaml`
+*   **Supported Formats**: `.txt`, `.md`, `.yaml`
 *   **Function**: The application will automatically scan this folder, extract text from all files, and feed it to the agents as primary context.
 
 ## Input Format (YAML)

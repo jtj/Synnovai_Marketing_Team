@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 from typing import List
-import pypdf
+
 
 class KnowledgeLoader:
     """
@@ -9,12 +9,13 @@ class KnowledgeLoader:
     Supports: .txt, .md, .yaml, .yml, .pdf
     """
     
-    SUPPORTED_EXTENSIONS = {'.txt', '.md', '.yaml', '.yml', '.pdf'}
+    SUPPORTED_EXTENSIONS = {'.txt', '.md', '.yaml', '.yml'}
     
     @staticmethod
     def load_knowledge(folder_name: str) -> str:
         """
-        Scans the folder ./<folder_name>/ for supported documents and returns concatenated content.
+        Scans the folder ./Knowledgebases/<folder_name>/ (or ./<folder_name>/) 
+        for supported documents and returns concatenated content.
         
         Args:
             folder_name: Name of the folder (relative to CWD) to scan.
@@ -22,10 +23,17 @@ class KnowledgeLoader:
         Returns:
             Concatenated text content of all valid documents.
         """
-        folder_path = Path(folder_name)
+        # Primary location: Knowledgebases/folder_name
+        folder_path = Path("Knowledgebases") / folder_name
+        
+        # Fallback: ./folder_name (legacy support)
         if not folder_path.exists() or not folder_path.is_dir():
-            print(f"Knowledge folder '{folder_name}' not found. Skipping local document loading.")
-            return ""
+            folder_path_legacy = Path(folder_name)
+            if folder_path_legacy.exists() and folder_path_legacy.is_dir():
+                folder_path = folder_path_legacy
+            else:
+                print(f"Knowledge folder for '{folder_name}' not found in 'Knowledgebases/' or root. Skipping local document loading.")
+                return ""
             
         print(f"Scanning knowledge folder: {folder_path.absolute()}")
         
@@ -58,25 +66,10 @@ class KnowledgeLoader:
         try:
             suffix = file_path.suffix.lower()
             
-            if suffix == '.pdf':
-                return KnowledgeLoader._read_pdf(file_path)
-            else:
-                return file_path.read_text(encoding='utf-8', errors='replace')
+            return file_path.read_text(encoding='utf-8', errors='replace')
                 
         except Exception as e:
             print(f"Error reading {file_path}: {e}")
             return ""
 
-    @staticmethod
-    def _read_pdf(file_path: Path) -> str:
-        """Extracts text from a PDF file."""
-        text = []
-        try:
-            with open(file_path, 'rb') as f:
-                reader = pypdf.PdfReader(f)
-                for page in reader.pages:
-                    text.append(page.extract_text())
-            return "\n".join(text)
-        except Exception as e:
-            print(f"Error parsing PDF {file_path}: {e}")
-            return ""
+
